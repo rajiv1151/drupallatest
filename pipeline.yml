@@ -1,0 +1,12 @@
+pipelineType: acquia
+
+provisioner: none
+provisionFor:
+# Branches List
+  - dev
+  - stage
+  - pre-prod
+  - master
+
+#tags list
+  - release/mvp_sprint12_june23a

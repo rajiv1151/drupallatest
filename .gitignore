@@ -1,0 +1,11 @@
+#ignoring sites folder
+web/sites/
+web/modules/contrib/
+web/themes/contrib/
+web/profiles/contrib/
+web/core
+vendor
+
+
+#outside web folders are ignored
+.gitattributes
