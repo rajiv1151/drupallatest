@@ -1,0 +1,7 @@
+rk_customlogin.admin_settings_form:
+  path: '/admin/config/rk_customlogin'
+  defaults:
+    _form: '\Drupal\rk_customlogin\Form\RKCustomLoginForm'
+    _title: 'RKLogin Settings'
+  requirements:
+    _permission: 'administer site configuration'  

@@ -1,0 +1,6 @@
+name: RK Login
+type: module
+description: 'Login, Register, password Reset.'
+package: Cmacgm custom
+core_version_requirement:  ^8 || ^9
+configure: rk_customlogin.admin

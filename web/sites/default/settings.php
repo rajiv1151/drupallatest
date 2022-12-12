@@ -806,3 +806,9 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_o0QuHCoTgW_c47foKRjx_PAvtzu2bxTpO36ZZZsH_W-gsd0E1V4h421G4k3cK1z1wh4vw83kvw/sync';
+
+# to debug WSOD
+error_reporting(E-All);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+$config['system.logging']['error_level'] = 'verbose';

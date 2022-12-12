@@ -1,0 +1,4 @@
+rk_customlogin-library:
+  css:
+    theme:
+      css/rk_customlogin.css: { minified:true }
