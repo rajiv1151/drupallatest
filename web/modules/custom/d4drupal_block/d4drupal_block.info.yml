@@ -1,0 +1,6 @@
+name: D4drupal Block
+type: module
+description: 'Simple block for D4drupal'
+core_version_requirement:  ^8 || ^9 || ^10
+dependencies:
+  - drupal:block
