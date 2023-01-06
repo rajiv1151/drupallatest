@@ -1,0 +1,20 @@
+uuid: d2ee2843-dc05-4635-a8ab-8651f36e3bb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - d4drupal_block
+  theme:
+    - zuvi
+id: d4drupalblock
+theme: zuvi
+region: content_top
+weight: 0
+provider: null
+plugin: d4drupal_block
+settings:
+  id: d4drupal_block
+  label: 'D4drupal block'
+  label_display: visible
+  provider: d4drupal_block
+visibility: {  }

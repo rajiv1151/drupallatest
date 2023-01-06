@@ -1,0 +1,7 @@
+uuid: 814f553d-740c-4caf-b76f-d428210c796d
+langcode: en
+status: true
+dependencies: {  }
+name: test_style_custom
+label: 'test style custom'
+effects: {  }

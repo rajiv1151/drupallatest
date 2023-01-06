@@ -1,0 +1,22 @@
+uuid: ee6b2b78-4e37-469e-b35a-af60c95e95d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zuvi
+_core:
+  default_config_hash: X35hAr_xkErqMKhSngilKyARyZtPVqAeGadR7WuZEwg
+id: zuvi_content
+theme: zuvi
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

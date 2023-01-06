@@ -1,0 +1,18 @@
+uuid: 1f971ffd-384e-4bf5-bca9-4cc5ba0cc2b2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - zuvi
+id: customform
+theme: zuvi
+region: content_top
+weight: 0
+provider: null
+plugin: example_dependency_injection_block
+settings:
+  id: null
+  label: CustomFormDIblock
+  label_display: visible
+  provider: null
+visibility: {  }

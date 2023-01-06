@@ -1,0 +1,25 @@
+uuid: 94541fd7-16fc-4943-998e-febe5d9cec7f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:38638deb-c57f-445b-8f27-90b3f98e3a86'
+  module:
+    - block_content
+  theme:
+    - zuvi
+id: ourservices
+theme: zuvi
+region: content_home
+weight: -6
+provider: null
+plugin: 'block_content:38638deb-c57f-445b-8f27-90b3f98e3a86'
+settings:
+  id: 'block_content:38638deb-c57f-445b-8f27-90b3f98e3a86'
+  label: 'Our Services'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 3d7a55b3-6656-4502-a0d4-ebc347c6b7db
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4dd27e33-2299-442f-9772-ed5b167b1b87'
+  module:
+    - block_content
+  theme:
+    - zuvi
+id: queries
+theme: zuvi
+region: footer_top
+weight: 0
+provider: null
+plugin: 'block_content:4dd27e33-2299-442f-9772-ed5b167b1b87'
+settings:
+  id: 'block_content:4dd27e33-2299-442f-9772-ed5b167b1b87'
+  label: Queries
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

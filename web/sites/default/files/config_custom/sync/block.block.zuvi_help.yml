@@ -1,0 +1,22 @@
+uuid: f78f5698-9c30-434c-b477-7d28e586e9e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - zuvi
+_core:
+  default_config_hash: '-CUYUbKzZEW6arttyVb3aXg70Fshtc1wLqjZn3xtnQI'
+id: zuvi_help
+theme: zuvi
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: cd19ae75-0f97-401f-b51d-68fd4d8f1293
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6947d4d3-a2cf-4e54-b31b-bab193ae6306'
+  module:
+    - block_content
+  theme:
+    - zuvi
+id: welcometoamanconstruction
+theme: zuvi
+region: content_home
+weight: -7
+provider: null
+plugin: 'block_content:6947d4d3-a2cf-4e54-b31b-bab193ae6306'
+settings:
+  id: 'block_content:6947d4d3-a2cf-4e54-b31b-bab193ae6306'
+  label: 'Welcome to Aman-Construction'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

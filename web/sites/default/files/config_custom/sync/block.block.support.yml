@@ -1,0 +1,25 @@
+uuid: df849ff1-9617-4190-a30a-072b5ae1a401
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c6ba6243-e976-4a0c-b32a-9ed57c3ac993'
+  module:
+    - block_content
+  theme:
+    - zuvi
+id: support
+theme: zuvi
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:c6ba6243-e976-4a0c-b32a-9ed57c3ac993'
+settings:
+  id: 'block_content:c6ba6243-e976-4a0c-b32a-9ed57c3ac993'
+  label: Support
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
