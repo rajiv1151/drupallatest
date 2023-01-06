@@ -805,7 +805,7 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_o0QuHCoTgW_c47foKRjx_PAvtzu2bxTpO36ZZZsH_W-gsd0E1V4h421G4k3cK1z1wh4vw83kvw/sync';
+$settings['config_sync_directory'] = 'sites/default/files/config_custom/sync';
 
 // to debug WSOD
 error_reporting(E_ALL);

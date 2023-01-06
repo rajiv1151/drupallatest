@@ -1,0 +1,9 @@
+name: Trans cms excel export Utility
+type: module
+description: ' Export excel file for the content.'
+package: Trans CMS plugin
+core_version_requirement:  ^8 || ^9 || ^10
+configure: rk_customlogin.admin
+dependencies:
+  - paragraphs:paragraphs
+  - drupal:content_translation

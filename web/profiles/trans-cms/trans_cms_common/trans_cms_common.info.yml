@@ -1,0 +1,83 @@
+name: Common Configuration for PE, CCE, PR
+type: profile
+description: 'Installs common modules and configurations across tracks.'
+core_version_requirement: ^9 || ^10
+
+#Modules to install to support the profiles
+install:
+  - admin_audit_trail
+  - automated_cron
+  - big_pipe
+  - block
+  - block_content
+  - breakpoint
+  - cdn
+  - ckeditor
+  - color
+  - comment
+  - config
+  - config_split
+  - contact
+  - contextual
+  - csv_serialization
+  - ctools
+  - datetime
+  - dynamic_page_cache
+  - editor
+  - entity_refrence_revision
+  - field
+  - field_ui
+  - file
+  - filter
+  - help
+  - history
+  - image
+  - language
+  - link
+  - menu_item_extras
+  - menu_link_content
+  - menu_ui
+  - metatag
+  - node
+  - options
+  - page_cache
+  - path
+  - path_alias
+  - quickedit
+  - rdf
+  - redis
+  - rest
+  - restui
+  - search
+  - search_api
+  - search_api_solr
+  - serialization
+  - shortcut
+  - smtp
+  - svg_image
+  - system
+  - taxonomy
+  - text
+  - token
+  - toolbar
+  - tour
+  - user
+  - view_data_export
+  - views_ui
+  - pathauto
+  - views
+  - paragraphs
+  - s3fs
+  - locale
+  - content_translation
+  - config_translation
+  - basic_auth
+  - trans_cms_menus
+  - trans_cms_labels
+themes:
+  - bartik
+  - seven  
+
+
+
+

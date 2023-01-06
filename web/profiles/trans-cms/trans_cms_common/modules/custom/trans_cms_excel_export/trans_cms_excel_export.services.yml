@@ -1,0 +1,4 @@
+services:
+  trans_cms_excel_export.helper_service:
+    class: Drupal\trans_cms_excel_export\Services\HelperService
+    arguments: ['@entity_type.manager', '@trans_cms_labels.paragraph_service', '@trans_cms_labels.faq_helper', '@trans_cms_labels.lessons_helper' ]

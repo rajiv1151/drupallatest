@@ -27,10 +27,13 @@ class DemoResource extends ResourceBase {
   public function get(){
     //$response =['message' => 'Hello, this is a rest service'];
     try{
-      $nids = \Drupal::entityQuery('node')->condition('type','article')->execute();
-      $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
+      $nids = \Drupal::entityQuery('node')
+      ->accessCheck(FALSE) //mandatory from >drupal 9.2 onwards
+      ->condition('type','article')
+      ->execute();
+      $nodes = Node::loadMultiple($nids);
       $nodes = $this->processNodes($nodes);
-      //dump($response);exit;
+      //dump($nids);exit;
       return new ResourceResponse($response);
     }catch(EntityStorageException $e){
       \Drupal::logger('widget')->error($e->getMessage());

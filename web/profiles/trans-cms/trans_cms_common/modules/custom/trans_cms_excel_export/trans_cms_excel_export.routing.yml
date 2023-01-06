@@ -1,0 +1,7 @@
+trans_cms_excel_export.export_form:
+  path: 'admin/config/content/excel-export'
+  defaults:
+    _form: '\Drupal\trans_cms_excel_export\Form\ExcelExporterForm'
+    _title: 'Export your Excel File'
+  requirements:
+    _permission: 'administer site configuration'  
