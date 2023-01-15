@@ -62,7 +62,7 @@ function zuvi_preprocess_page(array &$variables) {
 	}
 	if(!empty($slider_image_file)) {
 		$imageuri = $slider_image_file->getFileUri();
-		$variables['slider_image_path'] = file_create_url($imageuri);
+		$variables['slider_image_path'] = \Drupal::service('file_url_generator')->generateAbsoluteString($imageuri);
 	}
 }
 

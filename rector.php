@@ -31,7 +31,7 @@ return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->skip(['*/upgrade_status/tests/modules/*']);
     $rectorConfig->fileExtensions(['php', 'module', 'theme', 'install', 'profile', 'inc', 'engine']);
     $rectorConfig->importNames(true, false);
-	$rectorConfig->disableParallel();
     $rectorConfig->importShortClasses(false);
+	$rectorConfig->disableParallel(); 
     $parameters->set('drupal_rector_notices_as_comments', true);
 };

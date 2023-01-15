@@ -6,7 +6,7 @@
  */
 
 function zuvi_form_system_theme_settings_alter(&$form, &$form_state) {
-  $image_zuvipro = $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'zuvi') . '/images/zuvipro.png';
+  $image_zuvipro = $GLOBALS['base_url'] . '/' . \Drupal::service('extension.list.theme')->getPath('zuvi') . '/images/zuvipro.png';
   $zuvipro = '<img src="'.$image_zuvipro.'" alt="zuviPro" />';
   $form['zuvi'] = [
     '#type'       => 'vertical_tabs',
