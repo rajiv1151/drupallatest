@@ -52,6 +52,10 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
         array (
             'mglaman\\PHPStanDrupal\\' => 22,
         ),
+        'V' => 
+        array (
+            'VariableAnalysis\\' => 17,
+        ),
         'T' => 
         array (
             'Twig\\' => 5,
@@ -92,6 +96,7 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
+            'SlevomatCodingStandard\\' => 23,
             'SelfUpdate\\' => 11,
         ),
         'R' => 
@@ -106,6 +111,7 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
+            'PHPStan\\PhpDocParser\\' => 21,
             'PHPStan\\' => 8,
         ),
         'M' => 
@@ -143,13 +149,16 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
             'Drupal\\Composer\\Plugin\\ProjectMessage\\' => 38,
             'Drupal\\Component\\' => 17,
+            'Drupal\\' => 7,
             'DrupalRector\\' => 13,
+            'DrupalPractice\\' => 15,
             'DrupalCodeGenerator\\' => 20,
             'Doctrine\\Persistence\\' => 21,
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
             'Dflydev\\DotAccessData\\' => 22,
+            'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 55,
         ),
         'C' => 
         array (
@@ -166,6 +175,7 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
         'A' => 
         array (
             'Asm89\\Stack\\' => 12,
+            'Acquia\\CodingStandards\\' => 23,
         ),
     );
 
@@ -173,6 +183,10 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
         'mglaman\\PHPStanDrupal\\' => 
         array (
             0 => __DIR__ . '/..' . '/mglaman/phpstan-drupal/src',
+        ),
+        'VariableAnalysis\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sirbrillig/phpcs-variable-analysis/VariableAnalysis',
         ),
         'Twig\\' => 
         array (
@@ -314,6 +328,10 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
         ),
+        'SlevomatCodingStandard\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slevomat/coding-standard/SlevomatCodingStandard',
+        ),
         'SelfUpdate\\' => 
         array (
             0 => __DIR__ . '/..' . '/consolidation/self-update/src',
@@ -346,6 +364,10 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'PHPStan\\PhpDocParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpstan/phpdoc-parser/src',
         ),
         'PHPStan\\' => 
         array (
@@ -435,9 +457,17 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
         array (
             0 => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component',
         ),
+        'Drupal\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drupal/coder/coder_sniffer/Drupal',
+        ),
         'DrupalRector\\' => 
         array (
             0 => __DIR__ . '/..' . '/palantirnet/drupal-rector/src',
+        ),
+        'DrupalPractice\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drupal/coder/coder_sniffer/DrupalPractice',
         ),
         'DrupalCodeGenerator\\' => 
         array (
@@ -464,6 +494,10 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
         'Dflydev\\DotAccessData\\' => 
         array (
             0 => __DIR__ . '/..' . '/dflydev/dot-access-data/src',
+        ),
+        'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
         ),
         'Consolidation\\SiteProcess\\' => 
         array (
@@ -504,6 +538,10 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
         'Asm89\\Stack\\' => 
         array (
             0 => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack',
+        ),
+        'Acquia\\CodingStandards\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/acquia/coding-standards/src',
         ),
     );
 
