@@ -1,0 +1,15 @@
+uuid: 98c82a29-6c47-4740-9016-a548bceee1ad
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: Local
+description: 'This split is used for local setup config'
+weight: 0
+folder: ../config/split/local
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

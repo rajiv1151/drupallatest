@@ -1,0 +1,16 @@
+uuid: d172df50-41ef-4c9f-942f-b847592bfa70
+langcode: en
+status: false
+dependencies: {  }
+id: test
+label: Stage
+description: 'This split is used for stage env config.'
+weight: 0
+folder: ../config/split/test
+module:
+  views_ui: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

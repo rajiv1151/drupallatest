@@ -1,0 +1,16 @@
+uuid: d61cc16d-ac6f-450f-8639-f8caeb2a37aa
+langcode: en
+status: true
+dependencies: {  }
+id: dev
+label: Dev
+description: 'This split is used for dev configuration.'
+weight: 0
+folder: ../config/split/dev
+module:
+  views_ui: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
