@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - filter.format.restricted_html
+    - rest.resource.Articles
   module:
     - comment
     - contact
     - filter
+    - rest
     - search
     - system
 _core:
@@ -20,5 +22,9 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'administer rest resources'
+  - 'restful get Articles'
+  - 'restful patch Articles'
+  - 'restful post Articles'
   - 'search content'
   - 'use text format restricted_html'

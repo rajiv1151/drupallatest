@@ -1,6 +1,7 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
+  address: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
   automated_cron: 0
@@ -17,11 +18,11 @@ module:
   config_split: 0
   contact: 0
   contextual: 0
+  custom_api: 0
   d4drupal_block: 0
   date_popup: 0
   datetime: 0
   dblog: 0
-  demo_rest_ui: 0
   devel: 0
   dynamic_page_cache: 0
   editor: 0
@@ -33,6 +34,7 @@ module:
   history: 0
   image: 0
   jsonapi: 0
+  language: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0
@@ -54,6 +56,11 @@ module:
   rest: 0
   restui: 0
   search: 0
+  search_api: 0
+  search_api_autocomplete: 0
+  search_api_solr: 0
+  search_api_solr_admin: 0
+  search_api_spellcheck: 0
   serialization: 0
   shortcut: 0
   system: 0
