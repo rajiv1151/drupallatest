@@ -1,0 +1,218 @@
+{#
+/**
+ * @file
+ * The default template file for e-mails.
+ *
+ * Available variables:
+ * - subject: The subject.
+ * - body: The message content.
+ * - message: The $message array created and used in the mail building
+ *   procedure. Its content varies between cases, but typically contains at
+ *   least the following elements:
+ *   - id: The message identifier.
+ *   - module: The module that handles the building of the message.
+ *   - key: The key of the message.
+ *   - to: The recipient email address.
+ *   - from: The email address of the sender.
+ *   - langcode: The langcode to use to compose the e-mail.
+ *   - params: The message parameters.
+ *
+ * This template may be overriden by module and/or mail key, using any of the
+ * following template names:
+ * - swiftmailer.html.twig: global, used by default.
+ * - swiftmailer--mymodule.html.twig: only emails sent by the module "mymodule".
+ * - swiftmailer--mymodule--test.html.twig: only emails by the module
+ *   "mymodule" with key "test".
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_swiftmailer()
+ *
+ * @ingroup themeable
+ */
+#}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    body, table, td, a{
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
+	} 
+	/* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+	} 
+	/* Remove spacing between tables in Outlook 2007 and up */
+    img{
+	-ms-interpolation-mode: bicubic;
+	} 
+	/* Allow smoother rendering of resized image in Internet Explorer */
+
+    /* RESET STYLES */
+    img{
+		border: 0; 
+		height: auto; 
+		line-height: 100%;
+		outline: none;
+		text-decoration: none;
+	}
+    table{
+		border-collapse: collapse !important;
+	}
+    body{
+		height: 100% !important; 
+		margin: 0 !important; 
+		padding: 0 !important; 
+		width: 100% !important;
+	}
+	.header-logo{
+		background-image: linear-gradient(to right,#424949 10%,#17202A 34%);
+	}
+
+    /* iOS BLUE LINKS */
+	a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+    div[style*="margin: 16px 0;"] { margin: 0 !important; }
+</style>
+  </head>
+	  <body border="0" width="50%" cellpadding="0" cellspacing="0" style="max-width:50%;background-color:#181A20;">
+		<div>
+			<!--[if (gte mso 9)|(IE)]>
+				<table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+				<tr>
+				<td align="center" valign="top" width="500">
+				<![endif]--> 		
+		  <table border="0" width="750" cellpadding="0" cellspacing="0" width="50%" style="max-width:50%;">
+			<tr>
+			  <td>
+				 <!--[if (gte mso 9)|(IE)]>
+				<table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+				<tr>
+				<td align="center" valign="top" width="500">
+				<![endif]--> 
+				  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 750px;" >
+					<tr >
+					<!--[if (gte mso 9)|(IE)]>
+						<table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+						<tr>
+						<td align="center" valign="top" width="500">
+						<![endif]-->
+						<td class="logo header-logo" width="100%" height="200px;">
+							<!--[if (gte mso 9)|(IE)]>
+							<table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+							<tr>
+							<td align="center" valign="top" width="500">
+							<![endif]--> 
+							<table>
+								<tr style="position:relative;">
+									<td> 
+										<img src="https://dev-nbcsportsgroup-score-portal.nbcuni.com/sites/default/files/inline-images/email-template.png"  />
+									</td>
+								</tr>
+							</table>	
+							<!--[if (gte mso 9)|(IE)]>
+							</td>
+							</tr>
+							</table>
+							<![endif]-->							
+							
+							<!--[if (gte mso 9)|(IE)]>
+							<table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+							<tr>
+							<td align="center" valign="top" width="500">
+							<![endif]--> 
+							
+							<!--[if (gte mso 9)|(IE)]>
+							</td>
+							</tr>
+							</table>
+							<![endif]-->						
+						</td>
+					<!--[if (gte mso 9)|(IE)]>
+							</td>
+							</tr>
+							</table>
+							<![endif]-->	
+					</tr>
+				  </table> 
+				  
+				  
+				  <!--[if (gte mso 9)|(IE)]>
+				</td>
+				</tr>
+				</table>
+				<![endif]-->
+			  </td>
+			</tr>
+			<tr>
+			  <td>
+				
+				<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 750px;" >
+				  <tr>
+					<td width="100%" height="500" style="background-color:#e6e6e6;padding:2%">
+						 <!--[if (gte mso 9)|(IE)]>
+							<table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+							<tr>
+							<td align="center" valign="top" width="500">
+							<![endif]-->
+						<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 750px;">
+							<tr >
+								<td height="450" width="90%" style="background-color:#fff;padding: 3%;">
+								{{body}}
+								</td>
+							</tr>
+						</table>
+						<hr style="height:3px;border:none;color:#333;background-color:#grey;margin-top:20px;" />
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+						
+					</td>
+				 </tr> 
+				</table>
+					</td>
+			   </tr>
+			   <tr>
+					<td>
+					 <!--[if (gte mso 9)|(IE)]>
+							<table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+							<tr>
+							<td align="center" valign="top" width="500">
+							<![endif]-->
+						<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 750px;">
+							<tr>
+								<td>
+									<img src="https://dev-nbcsportsgroup-score-portal.nbcuni.com/sites/default/files/inline-images/email-footer.png" width="100%"/>
+								</td>
+							</tr>
+						</table>
+					<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+							
+					</td>
+			   </tr>
+			 </table>
+			 <!--[if (gte mso 9)|(IE)]>
+					</td>
+				</tr>
+				</table>
+			<![endif]-->	
+		</div>
+	  </body>
+</html>

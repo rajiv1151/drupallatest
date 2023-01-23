@@ -1,0 +1,476 @@
+@media (min-width: 992px) {
+  .user_operation_wrapper .user_operation_container {
+    width: 82%;
+  }
+  .user_operation_wrapper .user_operation_container .logo_title_wrapper .region-page-title {
+    width: 80%;
+  }  
+}
+@media (min-width: 1200px){
+  .user_operation_wrapper .user_operation_container {
+    width: 67%;
+  }
+  .user_operation_wrapper .user_operation_container .logo_title_wrapper .region-page-title {
+    width: 80%;
+  }
+}
+@media (min-width: 980px) {
+  .user_operation_wrapper.user_login_reset_wrapper .user_operation_container {
+    width: 55% !important;
+  }
+}
+@media (max-width: 980px) {
+  .user_operation_wrapper.user_registration_wrapper .user_operation_container {
+    width: 100% !important;
+  }
+}
+
+
+@media (min-width: 770px) {
+
+
+  .region-primary-menu{
+    display: inline-block;
+    float: right;
+    width: auto;
+    margin: 0;
+  }
+  .menu-base-theme a{
+    border: 0;
+  }
+
+  .menu-base-theme > li{
+    border: 0;
+  }
+  .user_operation_wrapper.user_login_reset_wrapper .user_operation_container {
+    width: 75%;
+  }
+  
+  .user_registration_wrapper .airport_display_val {
+    font-size: 12px;
+  }
+
+}
+@media (max-width: 1199px) {
+ /*
+  * Sign UP block Styles starts here
+  */
+  .sign-up-container {
+    min-height: 107px;
+  }
+  .sign-up-button a{
+    margin: 20px 0 0 17px;
+  }
+  .login-button a{
+    margin: 20px 0 0 0;
+  }
+  .login-text{
+    padding: 30px 0 0 0;
+  }
+ 
+ /*
+  * Sign UP block Styles ends here
+  */
+}
+@media (max-width: 769px) {
+  .user_operation_wrapper.user_login_reset_wrapper .user_operation_container {
+    width: 75%;
+  }
+  .user_operation_wrapper.user_registration_wrapper .user_operation_container {
+    width: 95%;
+  }
+  .event-list-page .item-list .arrow_list li .views-field.views-field-nothing .list-detail {
+    width: 100%;
+  }
+  /* Header Menu & Footer */
+  .sports-events-wrapper .main-header ,
+  .sports-events-wrapper .main-header nav,
+  .sports-events-wrapper .navbar-header,
+  .sports-events-wrapper .navbar-header .region-header {
+    /* height: 50px; */
+  }
+  .sports-events-wrapper .navbar-header .region-header {
+    height: 50px;
+  }
+  .container.highlighted {
+    padding-top: 51px;
+  }
+  .sports-events-wrapper .navbar-header {
+    padding: 0px;
+  }
+  .sports-events-wrapper .navbar-header .region-header .brand {
+    padding: 8px 0px;
+    width: 85%;
+  }
+  /*.sports-events-wrapper .navbar-header .region-header .brand .logo_image{
+    margin: 0 auto;
+  }*/
+  .sports-events-wrapper .navbar-toggle {
+    float: left;
+    margin-bottom: 0px; 
+	margin-top: 17px;
+  }
+  ul#main-menu li {
+    display: -webkit-box;
+    margin-left: 35px;
+}
+  .sports-events-wrapper .navbar-toggle .sr-only {
+    display: none;  
+	font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .sports-events-wrapper .navbar-toggle .icon-bar {
+    height: 2px;
+    width: 25px;
+    margin: 0px 4px;
+	background-color: #FDB913; /* 24/09/18*/
+  }
+  .sports-events-wrapper .navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 6px;
+  }
+  
+  .sports-events-wrapper .main-header .navbar-default {
+    background-color: unset !important;
+  }
+  .sports-events-wrapper .main-header .region-primary-menu{
+    width: 35%;
+    position: absolute;
+    left: 0px;
+  }
+  .sports-events-wrapper .main-header .menu-base-theme {
+    padding: 0px;
+    background-color: #181A20;
+    -webkit-transition:200ms ease;
+    -moz-transition:200ms ease;
+    -o-transition:200ms ease;
+    transition:200ms ease;
+  }
+  .sports-events-wrapper .region-primary-menu nav .menu-base-theme li {
+    padding: 0px 10px;
+    text-align: center;
+    width: 80%;/*25-09-18*/
+    /* border-bottom: 1px solid #3A3A3A; */
+	border-bottom: 3px solid #666; /* 24/09/18*/
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+  }
+  .sports-events-wrapper .region-primary-menu nav .menu-base-theme li a {
+    background-color: #181A20;
+    padding: 10px 5px;
+    border: 0px;
+  }
+  .sports-events-wrapper .region-primary-menu  nav .menu-base-theme li a.is-active,
+  .sports-events-wrapper .region-primary-menu  nav .menu-base-theme li a:focus,
+  .sports-events-wrapper .region-primary-menu  nav .menu-base-theme li a:hover {
+    border: 0px;
+    background-color: #181A20;
+  }
+  .sports-events-wrapper .navbar-toggle .icon-close {
+    width: 32px;
+    height: 18px;
+	background-color: #FDB913; /* 24/09/18*/
+  }
+  .sports-events-wrapper .copyright .container {
+	 padding: 11px 39px; /* 24/09/18*/
+    /* padding: 20px 80px; */
+  }
+  /* Header Menu & Footer */
+  .user_operation_wrapper .user_operation_container {
+    width: 80%;
+  }
+  /*.user_operation_wrapper.user_registration_wrapper .user_operation_container {
+    width: 100%;
+  }
+  .user_operation_wrapper.user_login_reset_wrapper .user_operation_container .user_operation_column.user_form {
+    width:95%;
+  }*/
+  .user_operation_wrapper .user_operation_container .logo_title_wrapper .region-page-title {
+    width: 80%;
+  }
+ /*
+  * Sign UP block Styles starts here
+  */
+  .sign-up-container {
+    /*min-height: 107px;*/
+    min-height: 125px;
+  }
+  .sign-up-text {
+    width: 37%;
+  }
+  .sign-up-button a{
+    margin: 20px 0 0 17px;
+  }
+  .login-button a{
+    margin: 20px 0 0 0;
+  }
+  .login-text{
+    padding: 30px 0 0 0;
+  }
+ 
+ /*
+  * Sign UP block Styles ends here
+  */
+}
+@media (max-width: 710px) {
+  .user_operation_wrapper.user_registration_wrapper .user_operation_container .logo_title_wrapper .region-page-title .content {
+    width: 95%;
+  }
+  .user_operation_wrapper.user_login_reset_wrapper .user_operation_container {
+    width: 85%;
+  }
+
+  .user_operation_wrapper .user_operation_container .logo_title_wrapper .logo, 
+  .user_operation_wrapper .user_operation_container .logo_title_wrapper .region-page-title  {
+    display: block;
+    margin: 0px auto 10px;
+    width: 100%;
+  }
+  .user_operation_wrapper .user_operation_container .logo_title_wrapper .logo {
+    width: 80px;
+    margin: 0 auto;
+  }
+  .user_operation_wrapper .user_operation_container .logo_title_wrapper .logo {
+    height: 76px;
+  }
+  .user_operation_wrapper .user_operation_container {
+    padding-bottom: 70px;
+  }
+  .user_registration_wrapper .form-wrapper input,
+  .user_registration_wrapper .form-wrapper select,
+  .user_registration_wrapper .password-strength{
+    width: 100% !important;    
+  }
+  .user_registration_wrapper .form-actions input,
+  .user_registration_wrapper .form-actions .user_profile_form_cancel_wrapper {
+    width: 200px !important;
+  }	
+  .user_registration_wrapper .form-wrapper,
+  .user_registration_wrapper .form-item{
+    width: 100% !important;
+    display: inline-block;
+    float: left;
+  }
+  .user_operation_wrapper .user_operation_container .user_form form .ms-parent.form-select {
+    margin-top: 0px;
+  }
+  .user_registration_wrapper .form-wrapper textarea {
+    margin-top: 20px;
+    width: 100% !important;
+  }
+  .user_registration_wrapper .captcha {
+    float: left;
+    width: 100%;
+  }
+  .user_registration_wrapper .captcha .g-recaptcha{
+    float: right;
+  }
+  .user_registration_wrapper .form-wrapper, .user_registration_wrapper fieldset.form-wrapper {
+    margin-bottom: 0px;
+  }
+  
+  /* Changes 10-May-2018 */
+  .user-login-form .form-wrapper input {
+    width: 100%;
+  }
+  .user-pass .form-wrapper input {
+    width: 100%;
+  }
+ /*
+  * Sign UP block Styles starts here
+  */
+  .sign-up-container {
+    padding: 10px;
+  }
+  .sign-up-text{
+    width: auto;
+    float: none;
+  }
+  .sign-up-button {
+    float: none;
+    margin-left: 30%;
+    margin-top: 5px;
+  }
+  .sign-up-button a{
+    margin: 0;
+  }
+  .login-button{
+    margin-left: 30%;
+    padding-bottom: 10px;
+    margin-top: 5px;
+  }
+  .login-button a{
+    margin: 0;
+  }
+  .login-text {
+    float: none;
+    width: auto;
+    margin-left: 33%;
+    padding: 10px 0 10px 8px;
+  }
+  .user_registration_wrapper .field--name-field-secondary-skills {
+    height: auto !important;
+    top: 0 !important;
+  }
+  .user_registration_wrapper .ms-parent {
+    bottom: 65px !important;
+  }
+  .user_registration_wrapper .form-item-field-secondary-skills {
+    height: 60px !important;
+  }
+  .user_registration_wrapper .form-item-entity-freelance-profile-field-secondary-skills {
+    height: 60px !important;
+  }
+ /*
+  * Sign UP block Styles ends here
+  */  
+}
+@media (max-width: 500px) {
+  .user_operation_wrapper.user_login_reset_wrapper .user_operation_container {
+    width: 100%;
+  }
+  .user_operation_wrapper.user_login_reset_wrapper .user_operation_container .user_operation_column.user_form {
+    width: 100%;
+  }
+  .user_registration_wrapper .form-actions input,
+  .user_registration_wrapper .form-actions .user_profile_form_cancel_wrapper {
+    float: none;
+  }	  
+  .user_registration_wrapper .form-actions {
+	float: none;
+	text-align: center;
+  }
+  .user_profile_form_cancel_wrapper{
+	margin: 20px 3px;
+  }
+  /* Header Menu & Footer */
+  .sports-events-wrapper .navbar-header .region-header .brand {
+    width: 85%;
+  }
+  .sports-events-wrapper .main-header .region-primary-menu {
+    width: 70%;
+  }
+  /* Header Menu & Footer */
+  
+  .user_operation_wrapper .user_operation_container .logo_title_wrapper {
+    height: 110px;
+    padding: 0px;
+  }
+  .user_operation_wrapper .user_operation_container .logo_title_wrapper .logo {
+    margin: 0px auto 10px;
+    background: url(../images/sport_events_spritesheet.png) no-repeat;
+    width: 70px;
+    height: 69px;
+    background-position: -5px -1421px;
+  }
+  .user_operation_wrapper .user_operation_container .logo_title_wrapper .region.region-page-title,
+  .user_operation_wrapper .user_operation_container .logo_title_wrapper .region-page-title .content {
+    width: 100%;
+  }
+
+  .user_operation_wrapper .user_operation_container {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .user_operation_wrapper .user_operation_container .user_operation_column {
+    display: block;
+    padding: 0px;
+  }
+  .user_operation_wrapper .user_operation_container .logo_column,
+  .user_operation_wrapper .user_operation_container .form_column  {
+    width: 100%;
+  }
+  .user_operation_wrapper .user_operation_container .user_form form {
+    border: 0px;
+    padding: 0px !important;
+  }
+  .user_registration_wrapper .captcha .g-recaptcha{
+    float: left;
+  }
+  .user_registration_wrapper .form-wrapper textarea {
+    margin-top: 35px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  /*
+  label, legend {
+    font-size: 20px !important;
+  }
+  */
+  .block-change-password-button-block a{
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+ /*
+  * Sign UP block Styles starts here
+  */
+  .sign-up-container {
+    padding: 10px;
+  }
+  .sign-up-text{
+    width: auto;
+    float: none;
+  }
+  .sign-up-button {
+    float: none;
+    margin-left: 30%;
+    margin-top: 5px;
+  }
+  .sign-up-button a{
+    margin: 0;
+  }
+  .login-button{
+    margin-left: 30%;
+    padding-bottom: 10px;
+    margin-top: 5px;
+  }
+  .login-button a{
+    margin: 0;
+  }
+  .login-text {
+    float: none;
+    width: auto;
+    margin-left: 33%;
+    padding: 10px 0 10px 8px;
+  }
+  .registration-form .field-prefix-label label.option{
+    max-width: 65%;
+	line-height: 30px;
+  }
+  .registration-form .field-prefix-label label.option::after, #edit-field-additional-comments-wrapper label::after {
+	padding-left: 5px;
+  }
+  #edit-field-lodging-wrapper .js-form-type-checkbox .toggle.btn {
+	margin-top: 15px;
+  }
+ /*
+  * Sign UP block Styles ends here
+  */
+}
+@media (max-width: 320px) {
+  .sports-events-wrapper .navbar-header .region-header .brand {
+    /* width: 68%; */ /*26/09/18*/
+  }
+}
+
+
+@media (min-width: 160px) and (max-width: 769px) {
+	
+	#block-homebanner div.content div img{
+			margin-top:0px !important;
+	}
+	.logo_image{
+		margin-bottom:9px;
+	}
+	.copyright p.copyright_msg, .follw-us-on{
+	    margin: 11px 12px !important;
+	}	
+	.privacy-policy{
+		margin-left:14px ;
+	}
+	
+}

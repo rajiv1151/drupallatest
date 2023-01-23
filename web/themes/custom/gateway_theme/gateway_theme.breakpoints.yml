@@ -1,0 +1,35 @@
+#Extra small devices-XS(portrait phones, less than 576px) @media (max-width: 575.98px) { ... }
+#Small devices- SM(landscape phones, 576px and up) @media (min-width: 576px) and (max-width: 767.98px) { ... }
+#Medium devices- MD(tablets, 768px and up) @media (min-width: 768px) and (max-width: 991.98px) { ... }
+#Large devices- LG(desktops, 992px and up) @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+#Extra large devices-XL(large desktops, 1200px and up) @media (min-width: 1200px) { ... }
+
+#weight - Positional weight (order) for the breakpoint.
+#multipliers - Multipliers are a measure of the viewport's device resolution, defined as the ratio between the physical pixel size of the
+#active device and the device-independent pixel size('1.5x' supports Android, '2x' supports Mac retina display)
+
+gateway_theme.screen-xs-max:
+  label: screen-xs-max
+  mediaQuery: 'all and (max-width: 767px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 1.5x
+gateway_theme.screen-sm-min:
+  label: screen-sm-min
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1x
+gateway_theme.screen-md-min:
+  label: screen-md-min
+  mediaQuery: 'all and (min-width: 992px)'
+  weight: 1
+  multipliers:
+    - 1x
+gateway_theme.screen-lg-min:
+  label: screen-lg-min
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 1
+  multipliers:
+    - 1x

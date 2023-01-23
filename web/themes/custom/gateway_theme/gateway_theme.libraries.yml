@@ -1,0 +1,30 @@
+# Global stylings. These CSS files will be loaded on every pages.
+global-styling:
+  version: 1.0
+  css:
+   base:
+      css/custom-style.css: {}
+   layout:
+      css/my-events.css: {}
+      css/custom-media.css: {}
+      
+# Global Javascripts. These will be loaded on every pages.
+global-scripts:
+  version: 1.0
+  js:
+    js/custom.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery  
+    - core/drupal.ajax
+    - core/drupalSettings
+    - core/jquery.once
+    - core/jquery.ui.dialog    
+
+# FontAwesome
+fontawesome:
+  version: 4.7.0
+  css:
+    component:
+      css/font-awesome.css: {}
+

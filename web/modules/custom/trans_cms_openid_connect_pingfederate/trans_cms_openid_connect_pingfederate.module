@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * OpenID Connect PingFederate module file
+ */
+
+ use Drupal\user\Entity\Role;
+ use Drupal\user\UserInterface;
+ use Drupal\user\RoleInterface;
+ use Drupal\Core\Form\FormStateInterface;
+
+ /**
+  * Implements hook_openid_connect_userinfo_save();
+  */
+
+  function trans_cms_openid_connect_pingfederate_openid_connect_userinfo_save(UserInterface $account, array $context){
+   if($context['plugin_id'] !== 'pingfederate'){
+    return;
+   }
+   try{
+    
+   }catch(Exception $exception){
+    return;
+   }
+
+  }
+  /**
+   * Implements hook_form_FORM_ID_alter()
+   */
+  function trans_cms_openid_connect_pingfederate_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id){
+
+  }

@@ -1,0 +1,39 @@
+/************************** My Event Start******************************/
+.my-events-view .my-event-wrapper {
+  border-bottom: none;
+  border-top: 10px solid #f8f8f8;
+  display: flex;
+}
+.view-my-events .my-event-wrapper {
+  display: flex;
+}
+.my-events-view .event-table-header {
+  border-bottom: none;
+}
+.block-views-blockmy-events-event-snippet {
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .block-views-blockmy-events-event-snippet .my-event-wrapper .event-title,
+  .block-views-blockmy-events-event-snippet .my-event-wrapper .event-broadcast-date {
+    width: auto;
+    text-align: left
+  }
+  .my-events-view .progress-custom {
+    display: block;
+    max-width: 100%;
+    margin-left: -8px;
+    padding-top: 10px;
+  }
+  .my-events-view .progress-custom .progress {
+    width: 70%;
+    float: left;
+  }
+  .my-events-view .progress-custom .progress-value {
+    width: 0%;
+    float: right;
+    margin-top: -5px;
+    padding: 0;
+  }
+}
+/************************** My Event End********************************/

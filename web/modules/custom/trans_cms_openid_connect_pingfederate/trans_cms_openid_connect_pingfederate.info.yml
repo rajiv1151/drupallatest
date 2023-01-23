@@ -1,0 +1,7 @@
+name: Trans CMS OpenID Connect PingFederate
+type: module
+description: 'This module adds a ping federate client to opeID connect.'
+package: Trans CMS Plugin
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - openid_connect:openid_connect

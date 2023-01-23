@@ -1,5 +1,0 @@
-name: Demo REST API
-description: Define's a custom REST Resource
-type: module
-package: Custom
-core_version_requirement:  ^8 || ^9 || ^10

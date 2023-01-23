@@ -1,0 +1,8 @@
+openid_pingfederate.sso:
+  path: 'openid-connect/pingfederate/signout'
+  defaults:
+    _controller: '\Drupal\trans_cms_openid_connect_pingfederate\Controller\PingFederateSSOController::signout'
+  requirements:
+    _access: 'TRUE'
+  options:
+    _maintenance_access: TRUE    

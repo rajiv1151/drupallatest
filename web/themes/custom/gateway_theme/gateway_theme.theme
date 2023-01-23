@@ -1,0 +1,206 @@
+<?php
+/**
+ * @file
+ * Contains theme override functions and preprocess functions
+ */
+
+use Drupal\Core\Template\RenderWrapper;
+use Drupal\Core\Template\Attribute;
+use Drupal\search\Form\SearchBlockForm;
+use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\system\Form\ThemeSettingsForm;
+use Drupal\file\Entity\File;
+use Drupal\Core\Url;
+use Drupal\file\Plugin\Core\Entity\FileInterface;
+
+/**
+ * Implements hook_preprocess_page() for block templates.
+ */
+
+function gateway_theme_preprocess_page(&$variables) {
+  $current_path = \Drupal::service('path.current')->getPath();
+  $current_route = \Drupal::service('current_route_match')->getRouteName();
+  $current_uri = \Drupal::request()->getRequestUri();
+  // Add Responsive class for Top Widget.
+  if (!empty($variables['page']['topwidget_first']) && !empty($variables['page']['topwidget_second']) && !empty($variables['page']['topwidget_third'])) {
+    $variables['topwidget_class'] = 'col-sm-4';
+    $variables['topwidget_third_class'] = 'col-sm-4';
+  }
+  elseif((!empty($variables['page']['topwidget_first']) && !empty($variables['page']['topwidget_second'])) or (!empty($variables['page']['topwidget_first']) && !empty($variables['page']['topwidget_third'])) or (!empty($variables['page']['topwidget_third']) && !empty($variables['page']['topwidget_second']))) {
+    $variables['topwidget_class'] = 'col-sm-6';
+    $variables['topwidget_third_class'] = 'col-sm-6';
+  }
+  else {
+    $variables['topwidget_class'] = 'col-md-12';
+  }
+
+  // Add Responsive class for Bottom Widget.
+  if (!empty($variables['page']['bottom_first']) && !empty($variables['page']['bottom_second']) && !empty($variables['page']['bottom_third']) && !empty($variables['page']['bottom_forth'])) {
+    $variables['bottom_class'] = 'col-sm-3';
+  }
+  else if (!empty($variables['page']['bottom_first']) && !empty($variables['page']['bottom_second']) && !empty($variables['page']['bottom_third'])) {
+    $variables['bottom_class'] = 'col-sm-4';
+  }
+  else if((!empty($variables['page']['bottom_first']) && !empty($variables['page']['bottom_second'])) or (!empty($variables['page']['bottom_first']) && !empty($variables['page']['bottom_third'])) or (!empty($variables['page']['bottom_third']) && !empty($variables['page']['bottom_second']))) {
+    $variables['bottom_class'] = 'col-sm-6';
+  }
+  else {
+    $variables['bottom_class'] = 'col-md-12';
+  }
+
+  // Add Responsive class for footer.
+  if (!empty($variables['page']['footer_first']) && !empty($variables['page']['footer_second']) && !empty($variables['page']['footer_third'])) {
+    $variables['footer_class'] = 'col-md-3';
+    $variables['footer_first_class'] = 'col-md-6';
+  }
+  elseif((!empty($variables['page']['footer_first']) && !empty($variables['page']['footer_second'])) or (!empty($variables['page']['footer_first']) && !empty($variables['page']['footer_third'])) or (!empty($variables['page']['footer_third']) && !empty($variables['page']['footer_second']))) {
+    $variables['footer_class'] = 'col-md-6';
+    $variables['footer_first_class'] = 'col-md-6';
+  }
+  else {
+    $variables['footer_class'] = 'col-md-12';
+  }
+
+  // Add information about the number of sidebars.
+  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    $variables['contentlayout'] = 'col-md-6';
+    $variables['sidebarfirst'] = 'col-md-3';
+    $variables['sidebarsecond'] = 'col-md-3';
+  }
+  elseif (!empty($variables['page']['sidebar_first'])) {
+    $variables['contentlayout'] = 'col-md-9 ';
+    $variables['sidebarfirst'] = 'col-md-3';
+  }
+  elseif (!empty($variables['page']['sidebar_second'])) {
+    $variables['contentlayout'] = 'col-md-9';
+    $variables['sidebarsecond'] = 'col-md-3';
+  }
+  else {
+    $variables['contentlayout'] = 'col-md-12';
+  }
+  if ($current_uri == '/privacy-policy') {
+    $variables['page']['content']['gateway_theme_content']['#attributes']['class'][] = 'privacy-policy-content';
+  }
+
+  // Social media global variable.
+  $variables['show_social_icon'] = theme_get_setting('show_social_icon');
+  $variables['facebook_url'] = theme_get_setting('facebook_url');
+  $variables['google_plus_url'] = theme_get_setting('google_plus_url');
+  $variables['twitter_url'] = theme_get_setting('twitter_url');
+  $variables['linkedin_url'] = theme_get_setting('linkedin_url');
+  $variables['pinterest_url'] = theme_get_setting('pinterest_url');
+  $variables['rss_url'] = theme_get_setting('rss_url');
+  $variables['show_credit_link'] = theme_get_setting('show_credit_link');
+  
+  if ($current_path == '/user/login' || $current_path == '/user/password' || $current_route == 'entity.user.edit_form') {
+    $variables['user_operation_page'] = 'user_login_reset_wrapper';
+  }
+  elseif ($current_path == '/user/register' || $current_route == 'entity.profile.type.user_profile_form') {
+    $variables['user_operation_page'] = 'user_registration_wrapper';
+  }
+  else {
+    unset($variables['user_operation_page']);
+  }
+  
+  $variables['page']['#cache']['contexts'][] = 'route';  
+  if ($current_route == 'view.events_management_calendar.page_month') {
+    $variables['#attached']['library'][] = 'gateway_theme/calendar';
+  }  
+  if ( $current_route == 'view.my_events.page_1' ) {
+    $variables['#attached']['library'][] = 'gateway_theme/my-events';
+  }
+  if ( $current_route == 'view.admin_user_events_history.page_1' || $current_route == 'view.admin_user_events_history_with_profile.page_1' ) {
+    $variables['#attached']['library'][] = 'gateway_theme/events-history';
+  }
+  if ($current_route == 'view.events_management.map' || $current_route == 'view.events_management.list' || $current_route == 'view.events_management.month') {
+    $variables['#attached']['library'][] = 'gateway_theme/events-list';
+  }
+  if( $current_route == 'view.admin_manage_network_image.page_1' ) {
+    $variables['#attached']['library'][] = 'gateway_theme/network-image';
+  } 
+}
+
+/**
+ * Implements hook_preprocess_menu().
+ */
+function gateway_theme_preprocess_menu(&$variables, $hook) {
+  if ($hook == 'menu__main') { // We're doing that for main menu.
+    // Get the current path.
+    $current_path = \Drupal::request()->getRequestUri();
+    $current_route = \Drupal::service('current_route_match')->getRouteName();
+    $items = $variables['items'];
+    foreach ($items as $key => $item) {
+      // If path is current_path, set active to li.
+      if ($item['url']->toString() == $current_path) {
+      // Add active link.
+      $variables['items'][$key]['attributes']['class'] = 'active';
+      }
+      elseif ($current_route == 'entity.profile.type.user_profile_form' && $item['url']->toString() == '/my_profile') {
+        $profile_path = Url::fromRoute('entity.profile.type.user_profile_form', ['user' => \Drupal::currentUser()->id(), 'profile_type' => 'freelance_profile'])->toString();
+        if($current_path == $profile_path) {
+          $variables['items'][$key]['attributes']->addClass('active');
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_breadcrumb().
+ */
+function gateway_theme_preprocess_breadcrumb(&$variables){
+  if(($node = \Drupal::routeMatch()->getParameter('node')) && $variables['breadcrumb']){
+    $variables['breadcrumb'][] = array(
+     'text' => $node->getTitle(),
+     'url' => $node->URL()
+   );
+  }
+}
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function gateway_theme_preprocess_block(&$variables) {
+  if( $variables['derivative_plugin_id'] == 'main' ) {
+    $variables['#cache']['max-age'] = 0;
+  }
+  $route = \Drupal::routeMatch()->getRouteName();
+  if ($route == 'rng.event.node.register') {
+    switch ($variables['elements']['#id']) {
+      case 'views_block__event_details_map_block_2':
+        
+        //$variables['elements']['#prefix'] = '<div class="col-md-6">';
+        break;
+      case 'gateway_theme_content':
+        $variables['attributes']['class'][] = 'col-md-7';
+        break;
+      case 'views_block__event_details_map_block_1':
+        $variables['attributes']['class'][] = 'col-md-5 hidden-xs';
+        break;
+    }
+  }
+
+  if (isset($variables['elements']['#id'])) {
+    if ($variables['elements']['#id'] == 'views_block__upcoming_events_upcoming_block_responsive') {
+      $variables['#attached']['library'][] = 'gateway_theme/upcoming-events';
+    }
+  }
+
+  $current_uri = \Drupal::request()->getRequestUri();
+  if ($current_uri == '/privacy-policy' && $variables['elements']['#id'] == 'pagetitle') {
+    $variables['attributes']['class'][] = 'privacy-policy-content';
+    // kint($variables);
+  }
+}
+
+/**
+ * Implements template_preprocess_image().
+ */
+function gateway_theme_preprocess_image(&$vars) {
+  // $route = \Drupal::routeMatch()->getRouteName();
+  // if (in_array($route, ['view.events_management.month', 'view.events_management.list', 'view.events_management.map'])
+  if ($vars['style_name'] == 'thumbnail') {
+    unset($vars['attributes']['width'], $vars['attributes']['height']);
+  }
+}

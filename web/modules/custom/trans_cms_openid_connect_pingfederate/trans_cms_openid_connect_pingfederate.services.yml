@@ -1,0 +1,5 @@
+services:
+  openid_connect_pingfederate.route_subscriber:
+    class: '\Drupal\trans_cms_openid_connect_pingfederate\Routing\PingFederateSSORouteSubscriber'
+    tags:
+      - { name: event_subscriber }

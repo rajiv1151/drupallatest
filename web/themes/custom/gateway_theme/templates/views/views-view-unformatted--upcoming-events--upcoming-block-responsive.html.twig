@@ -1,0 +1,78 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+<div class="scrollbar-janos theme-dark">
+<div class="hidden-sm hidden-xs upcoming-event-desktop-wrapper">
+  {% for row in rows %}
+    {%
+      set row_classes = [
+        default_row_class ? 'views-row',
+      ]
+    %}
+    <div{{ row.attributes.addClass(row_classes) }}>
+      {{ row.content }}
+    </div>
+  {% endfor %}
+</div>
+</div>
+
+  <div class="upcoming-event-mobile-block-wrapper visible-xs visible-sm">
+    <div class="mobile-event-list-wrapper jcarousel-wrapper">
+      <div class="mobile-event-list jcarousel">
+        <ul class="mobile-events">
+        {% for key, row in rows %}
+          <li>
+          {% set row_render_entity = row.content['#view'].style_plugin.render_tokens[ loop.index0 ] %}
+            <div class="views-field views-field-field-network-image col-sm-6 col-xs-5">
+              <div class="field-content">
+                <div class="upcoming-event-mobile-image-wrapper">
+                <div class="event-mobile-image">
+                  <div class="list-network-image">
+                  {{ row_render_entity['{{ field_network_image }}'] }}
+                  </div>
+                </div>
+                 <div class="list-broadcast-type list-{{ row_render_entity['{{ field_broadcast_type }}']|replace({' ':'-'})|lower }}">
+                 {{ row_render_entity['{{ field_broadcast_type }}']}}
+                 </div>
+                </div>
+              </div>
+            </div>
+            <div class="views-field views-field-nothing col-sm-6 col-xs-7">
+              <span class="field-content">
+                <div class="upcoming-event-mobile-content-wrapper">
+                  <div class="list-title">{{ row_render_entity['{{ title }}'] }}</div>
+                  <div class="list-network">{{ row_render_entity['{{ field_venue_name }}'] }}</div>
+                  <!--div class="list-address">{{ row_render_entity['{{ field_venue_address }}'] }}</div -->
+				  <div class="list-date">{{ row_render_entity['{{ field_broadcast_date }}'] }}</div>
+                  <div class="event-register-link">{{ row_render_entity['{{ rng_event_register }}'] }}</div>
+                </div>
+              </span>
+            </div>          
+          
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+      <a href="#" class="jcarousel-control-prev"><span></span></a>
+      <a href="#" class="jcarousel-control-next"><span></span></a>
+    </div>
+  </div>

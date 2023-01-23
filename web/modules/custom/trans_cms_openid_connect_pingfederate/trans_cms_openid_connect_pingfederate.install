@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Remove Configuration of settings form
+ * 
+ */
+
+ /**
+  * Implements hook_uninstall().
+  */
+
+  function trans_cms_openid_connect_pingfederate_uninstall(){
+    //Remove Configuration 
+    Drupal::configFactory()->getEditable('openid_connect.settings.pingfederate')->delete();
+  }
