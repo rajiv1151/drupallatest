@@ -1,0 +1,7 @@
+employee-library:
+  version: 1.x
+  css:
+    theme:
+      css/employee.css: {}
+  js:
+    js/employee.js: {}     

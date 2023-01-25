@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Create help page.
+ * Implements hook_help()
+ */
+function trans_cms_menus_help($routeName, RouteMatchInterface $routeMatch) {
+	switch($routeName) {
+		case 'help.page.trans_cms_menus':
+		  return '';
+ }
+}

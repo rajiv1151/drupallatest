@@ -1,0 +1,14 @@
+employee.employee:
+  path: '/employee-data'
+  defaults:
+    _title: 'Employee Details'
+    _form: 'Drupal\employee\Form\EmployeeForm'
+  requirements:
+    _permission: 'access content'
+employee.ajax:    
+  path: '/employee-ajax-data'
+  defaults:
+    _title: 'Employee Ajax Details'
+    _form: 'Drupal\employee\Form\EmployeeAjaxForm'
+  requirements:
+    _permission: 'access content'    

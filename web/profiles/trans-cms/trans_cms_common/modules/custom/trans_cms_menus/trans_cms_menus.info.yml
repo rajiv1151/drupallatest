@@ -1,0 +1,8 @@
+name: Trans CMS Menus
+type: module
+description: ' REST endpoint for the menus.'
+package: Trans CMS APIs
+core_version_requirement:  ^8 || ^9 || ^10
+dependencies:
+  - drupal:rest
+  - menu_item_extras:menu_item_extras

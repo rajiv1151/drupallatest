@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="core/tests/bootstrap.php" colors="true"
+         beStrictAboutTestsThatDoNotTestAnything="true"
+		 beStrictAboutOutputDuringTests="true"
+		 beStrictAboutChangesToGlobalState="true"
+		 failOnWarning="true"
+		 printerClass="\Drupal\Tests\Listners\HtmlOutputPrinter"
+		 cacheResult="false">
+		 
+  <php>
+  
+  </php>
+  <testsuites>
+        <testsuite name="Project Test Suite">
+            <directory suffix="Test.php">profiles/trans-cms/trans_cms_common/modules/custom/trans_cms_menus/tests</directory>
+        </testsuite>
+    </testsuites>
+	<coverage processUncoveredFiles="True">
+	<include>
+	<directory suffix=".php">profiles/trans-cms/trans_cms_common/modules/custom/trans_cms_menus/src</directory>
+	</include>
+	</coverage>
+</phpunit>

@@ -1,0 +1,122 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ *
+ *  {@inheitdoc}
+ */
+function rk_customlogin_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.rk_customlogin':
+      $output = '';
+      $output .= '<h3>' . t('Settings') . '</h3>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_preprocess_html().
+ *
+ * {@inheitdoc}
+ */
+function rk_customlogin_preprocess_html($variables) {
+  $path = \Drupal::service('path.current')->getpath();
+  $user_path = ['/user', '/user/login', '/user/password', '/user/register'];
+  // Gets the current active user.
+  $current_user = \Drupal::currentUser();
+  if ($current_user->id()) {
+    if (in_array($path, $user_path)) {
+
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_alter().
+ *
+ * {@inheitdoc}
+ */
+function rk_customlogin_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+  if ($hook == 'page') {
+    $path = \Drupal::service('path.current')->getpath();
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ *
+ * {@inheitdoc}
+ */
+function rk_customlogin_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'user_login_form') {
+    $form['#access'] = FALSE;
+  }
+}
+
+/**
+ * Implements hook_element_info_alter().
+ *
+ * {@inheitdoc}
+ */
+function rk_customlogin_element_info_alter(array &$types) {
+  if (isset($types['password_confirm'])) {
+    $types['password_confirm']['#process'][] = 'rk_customlogin_password_confirm';
+  }
+}
+
+/**
+ * Process password confirm element.
+ */
+function rk_customlogin_password_confirm($element) {
+  $element['pass1']['#title_display'] = 'invisible';
+}
+
+/**
+ * Implements hook_page_attachments().
+ *
+ * {@inheitdoc}
+ */
+function rk_customlogin_page_attachments(array &$attachments) {
+
+}
+
+/**
+ * Implements hook_theme_registery_alter().
+ *
+ * {@inheitdoc}
+ */
+function rk_customlogin_theme_registery_alter(&$theme_registry) {
+  $path = \Drupal::service('module_handler')->getModule('cmacgm_customlogin')->getPath();
+  // Check if the file exists in the theme directory.
+  $theme = \Drupal::theme()->getActiveTheme();
+  if (file_exists($theme->getpath() . '/templates/rk_customlogin.html.twig')) {
+    $path = \Drupal::service('theme_handler')->getTheme($theme->getName())->getPath();
+  }
+  $theme_registery['rk_customlogin'] = [
+    'preprocess functions' => [
+      0 => 'rk_customlogin_preprocess_simplelogin',
+    ],
+    'template' => 'rk_customlogin',
+    'path' => $path . '/templates',
+    'render element' => 'page',
+    'type' => 'base_theme_engine',
+  ];
+}
+
+/**
+ * Create help page.
+ * Implements hook_help()
+ */
+function trans_cms_menus_help($routeName, RouteMatchInterface $routeMatch) {
+	switch($routeName) {
+		case 'help.page.trans_cms_menus':
+		  return '';
+ }
+}
