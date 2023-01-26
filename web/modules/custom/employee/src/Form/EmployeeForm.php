@@ -67,7 +67,7 @@ class EmployeeForm extends FormBase {
       '#value' => $this->t('Save'),
     ];
 
-    $form['#attached']['library'][] = 'employee/employee-library';
+    //$form['#attached']['library'][] = 'employee/employee-library';
     return $form;
   }
 
@@ -81,7 +81,7 @@ class EmployeeForm extends FormBase {
     $lastName = trim($formField['emp_lastname']);
     $email = trim($formField['emp_email']);
     $zipcode = trim($formField['emp_zipcode']);
-	$accept = $formField['accept'];//0/1
+	  $accept = $formField['accept'];//0/1
 
     if (!preg_match("/^([a-zA-Z']+)$/", $firstName)) {
       $form_state->setErrorByName('emp_firstname', $this->t('Enter the valid first name'));

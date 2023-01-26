@@ -1,6 +1,0 @@
-employee-library:
-  css:
-    theme:
-      css/employee.css: {}
-  js:
-    js/employee.js: {}     

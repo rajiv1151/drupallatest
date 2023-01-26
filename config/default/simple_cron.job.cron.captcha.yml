@@ -1,0 +1,14 @@
+uuid: 0e9d2691-3739-408a-9ce8-c6642f3def83
+langcode: en
+status: true
+dependencies:
+  module:
+    - captcha
+id: cron.captcha
+crontab: '*/15 * * * *'
+plugin: cron
+type: captcha
+configuration: {  }
+provider: captcha
+single: false
+weight: 0

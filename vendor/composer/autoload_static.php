@@ -56,6 +56,10 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
         array (
             'ZipStream\\' => 10,
         ),
+        'W' => 
+        array (
+            'Webmozart\\Assert\\' => 17,
+        ),
         'V' => 
         array (
             'VariableAnalysis\\' => 17,
@@ -172,6 +176,7 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
         ),
         'C' => 
         array (
+            'Cron\\' => 5,
             'Consolidation\\SiteProcess\\' => 26,
             'Consolidation\\SiteAlias\\' => 24,
             'Consolidation\\OutputFormatters\\' => 31,
@@ -198,6 +203,10 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
         'ZipStream\\' => 
         array (
             0 => __DIR__ . '/..' . '/maennchen/zipstream-php/src',
+        ),
+        'Webmozart\\Assert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
         'VariableAnalysis\\' => 
         array (
@@ -537,6 +546,10 @@ class ComposerStaticInit679d5191403b87747f2a43b3711609a7
         'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
         array (
             0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
+        ),
+        'Cron\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
         'Consolidation\\SiteProcess\\' => 
         array (

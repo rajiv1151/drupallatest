@@ -5,3 +5,6 @@ employee-library:
       css/employee.css: {}
   js:
     js/employee.js: {}     
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

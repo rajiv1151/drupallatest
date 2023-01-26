@@ -99,7 +99,7 @@ function employee_requirements($phase) {
  * Add new field(accept) to 'employee' table.
  */
  
- function employee_update_9000(){
+ function employee_update_9000(){//working
 	$spec = [
     'type' => 'int',
     'description' => "Boolean indicating whether conditions accepted.",
@@ -112,7 +112,7 @@ function employee_requirements($phase) {
  /**
  * Add new fields to 'employee' table.
  */
-function employee_update_9002() {
+/*function employee_update_9002() {// not working
 $spec = [
   $fields =>[
     'myfield1' => [
@@ -129,7 +129,7 @@ $spec = [
       ],
     ],
   ]; 
-  /*
+  
   // Get the connection and the database schema.
   $connection = \Drupal::service('database');
   $schema = $connection->schema();
@@ -146,11 +146,11 @@ $spec = [
     \Drupal::logger('your_custom_module')->notice('Field Extra deleted.');
     }
   }
-  */
+  
 	$schema = Database::getConnection()->schema();
     if ($schema->tableExists('employee')) {	
         $schema->addField('employee', 'accept', $spec);
       //db_add_field('employee', $key, $field);
     }
-  }
+  }*/
 

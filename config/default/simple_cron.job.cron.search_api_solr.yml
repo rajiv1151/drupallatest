@@ -1,0 +1,14 @@
+uuid: 85b8b996-ed5d-424e-b184-fdde86e756e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+id: cron.search_api_solr
+crontab: '*/15 * * * *'
+plugin: cron
+type: search_api_solr
+configuration: {  }
+provider: search_api_solr
+single: false
+weight: 0

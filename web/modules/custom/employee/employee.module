@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @param $variables
+ */
+
+function employee_preprocess_page(&$variables) {
+    $variables['#attached']['library'][] = 'employee/employee-library';
+    $account = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    $user = $account->get('name')->value;
+    //echo "$user";
+    $variables['#attached']['drupalSettings']['employee']['current_user'] = $user;
+    
+}
