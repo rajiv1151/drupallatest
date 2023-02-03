@@ -11,4 +11,11 @@ employee.ajax:
     _title: 'Employee Ajax Details'
     _form: 'Drupal\employee\Form\EmployeeAjaxForm'
   requirements:
+    _permission: 'access content'
+employee.information:    
+  path: '/employee-data-view'
+  defaults:
+    _title: 'Employee Details'
+    _controller: 'Drupal\employee\Controller\EmployeeController::information'
+  requirements:
     _permission: 'access content'    

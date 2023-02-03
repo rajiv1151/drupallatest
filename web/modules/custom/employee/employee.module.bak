@@ -1,0 +1,51 @@
+<?php
+use \Drupal\views\ViewExecutable;//used for hook_view
+/**
+ * @param $variables
+ */
+/**
+ * Implements hook_preprocess_page().
+ */
+function employee_preprocess_page(&$variables){
+	$variables['#attached']['library'][] = 'employee/employee-library';
+    $account = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    $user = $account->get('name')->value;
+    //echo "$user";
+    $variables['#attached']['drupalSettings']['employee']['current_user'] = $user;
+  /*$route_name = \Drupal::routeMatch()->getRouteName();
+  if (in_array($route_name, [
+    'hr_onboarding_helper.registration.submissions.edit',
+    'hr_onboarding_helper.documents.hiring_manager'
+  ])) {
+    $variables['#attached']['library'][] = 'hr_onboarding_helper/list-documents';
+  }*/
+}
+
+
+/**
+ * Implements hook_view_pre_render()
+ */
+function employee_views_pre_render(ViewExecutable $view){
+    //dump($view);exit;
+	if($view->id() == 'articles' && $view->getDisplay()->display['id'] == "page_1" ){
+		$view->element['#attached']['library'][] = 'employee/employee-library';
+        $view->setTitle('From custom employee Module');
+	}
+    
+}
+/**
+ * Implements hook_theme()
+ */
+function employee_theme($existing, $type, $theme, $path) {
+  $return = [];  
+  $return['employee_page'] = [//from controller
+    'template' => 'employee-page',//optional
+    'variables'=>[
+	    'data'=>[],//variable name from controller
+		'title'=>'',
+		'emp_datas'=>[] //variable name from controller
+	]
+  ];
+     
+return $return;	
+}

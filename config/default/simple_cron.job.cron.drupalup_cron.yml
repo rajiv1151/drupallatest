@@ -1,0 +1,14 @@
+uuid: e17c72ab-ce51-4d87-babf-9d5345d4e835
+langcode: en
+status: true
+dependencies:
+  module:
+    - drupalup_cron
+id: cron.drupalup_cron
+crontab: '*/15 * * * *'
+plugin: cron
+type: drupalup_cron
+configuration: {  }
+provider: drupalup_cron
+single: false
+weight: 0

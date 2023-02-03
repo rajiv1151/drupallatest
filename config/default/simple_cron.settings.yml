@@ -3,7 +3,7 @@ _core:
 cron:
   override_enabled: true
 queue:
-  override_enabled: false
+  override_enabled: true
 base:
   max_execution_time: 240
   lock_timeout: 900

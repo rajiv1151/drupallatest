@@ -34,6 +34,7 @@
         "drupal/search_api_solr": "^4.2",
         "drupal/search_api_spellcheck": "^4.0",
         "drupal/simple_cron": "^1.0",
+        "drupal/twig_tweak": "^3.2",
         "drupal/upgrade_status": "^3.18",
         "drupal/varnish_purge": "^2.1",
         "drupal/zuvi": "^8.1",

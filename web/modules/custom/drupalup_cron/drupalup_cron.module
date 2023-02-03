@@ -1,0 +1,22 @@
+<?php
+
+use Drupal\Core\Config\ConfigFactoryInterface;
+/**
+ * @file 
+ * Implementing hook function
+ */
+
+function drupalup_cron_cron() {
+    //if we change site slogan from drupal admin
+    //D:\xampp\htdocs\drupallatest\web\core\modules\system\config\install\system.site.yml
+    $slogan = \Drupal::service('config.factory')->getEditable('system.site')->get('slogan');
+    if(is_numeric($slogan)){
+        $slogan = $slogan +1;
+        \Drupal::service('config.factory')->getEditable('system.site')->set('slogan', $slogan)->save();
+    }else{
+        \Drupal::service('config.factory')->getEditable('system.site')->set('slogan',0)->save();
+
+    }
+    //$last_run_per_minut = \Drupal::state()->get('drupalup_cron.last_run', 0);
+
+}

@@ -11,7 +11,7 @@
     Drupal.behaviors.Employee = {
         attach: function(context, settings){
           var current_user_name = drupalSettings.employee.current_user;
-          console.log(current_user_name);     
+          //console.log(current_user_name);     
         }
     };
 })(jQuery, Drupal, drupalSettings)

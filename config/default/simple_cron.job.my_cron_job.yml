@@ -1,0 +1,14 @@
+uuid: efec131b-d2ec-4bb9-9ecc-a72249584052
+langcode: en
+status: true
+dependencies:
+  module:
+    - drupalup_cron
+id: my_cron_job
+crontab: '* * * * *'
+plugin: my_cron_job
+type: default
+configuration: {  }
+provider: drupalup_cron
+single: true
+weight: 0

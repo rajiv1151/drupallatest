@@ -1,0 +1,43 @@
+{#
+/** 
+*@file
+* Theme "employee-page" template
+* @see employee_theme()
+* Available variables:
+*
+*  - data,-emp_data,-user_role: The content to be rendered.
+*/
+#}
+{#{{ drupal_block('d4drupal_block') }} 
+{{ drupal_view('articles') }}
+{{ drupal_form('employee_ajax') }} #}
+{% apply spaceless %}
+    <div class ="simplelogin">
+      Name: {{ data.name }} </br>
+	    Email: {{ data.email }}
+    </div>
+ {% if 'administrator' in user_role %}
+  <table>
+    <div class="Parent"> 
+      <tr>  <td><p class="first_name">{{ 'First Name'|t }}</p></td>
+            <td><p class="last_name">{{ 'Last Name'|t }}</p></td>
+            <td><p class="email">{{ 'Email'|t }}</p></td>
+            <td><p class="zipcode">{{ 'Zipcode'|t }}</p></td>
+      </tr>
+    </div>  
+    {% for emp_data in emp_datas %}
+    <div class="child-wrapper">
+      <tr>
+            <td><p class="first_name">{{ emp_data.emp_firstname }}</p></td>
+            <td><p class="last_name">{{ emp_data.emp_lastname }}</p></td>
+            <td><p class="email">{{ emp_data.emp_email }}</p></td>
+            <td><p class="zipcode">{{ emp_data.emp_zipcode }}</p></td>
+      </tr>
+    </div>
+    {% endfor %}  
+  </table>
+ {% else %}
+  <p class="first_name">{{ 'No Access'|t }}</p>
+ {% endif %}
+
+{% endapply %}

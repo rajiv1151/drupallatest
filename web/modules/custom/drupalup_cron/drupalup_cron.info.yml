@@ -1,0 +1,5 @@
+name: Drupalup Cron
+type: module
+description: 'Showing how to trigger cron job'
+core_version_requirement:  ^8 || ^9 || ^10
+
