@@ -1,4 +1,4 @@
-uuid: 0878a94f-f540-43d2-bfb8-6f22981a89c4
+uuid: 7c099c60-8b65-4434-a5a9-55a4a49f04ea
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: zuvi_footer
 theme: zuvi
 region: hidden_blocks
-weight: -19
+weight: -9
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

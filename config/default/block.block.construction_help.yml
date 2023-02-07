@@ -1,0 +1,22 @@
+uuid: 1fa07402-e1c5-4bda-a2b7-ad0ee280c062
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - construction
+_core:
+  default_config_hash: '-CUYUbKzZEW6arttyVb3aXg70Fshtc1wLqjZn3xtnQI'
+id: construction_help
+theme: construction
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

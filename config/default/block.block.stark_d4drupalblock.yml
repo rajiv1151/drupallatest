@@ -1,0 +1,20 @@
+uuid: bfa648d1-0b6f-46aa-a989-f82e9d3a0a78
+langcode: en
+status: true
+dependencies:
+  module:
+    - d4drupal_block
+  theme:
+    - stark
+id: stark_d4drupalblock
+theme: stark
+region: content
+weight: -3
+provider: null
+plugin: d4drupal_block
+settings:
+  id: d4drupal_block
+  label: 'D4drupal block'
+  label_display: visible
+  provider: d4drupal_block
+visibility: {  }

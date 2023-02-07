@@ -1,4 +1,4 @@
-uuid: cd19ae75-0f97-401f-b51d-68fd4d8f1293
+uuid: c5cb7115-ac6b-499a-b837-6b9ed2118075
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
 id: welcometoamanconstruction
 theme: zuvi
 region: content_home
-weight: -7
+weight: 0
 provider: null
 plugin: 'block_content:6947d4d3-a2cf-4e54-b31b-bab193ae6306'
 settings:

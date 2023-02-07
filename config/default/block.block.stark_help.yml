@@ -1,0 +1,22 @@
+uuid: 95ab72b7-0c34-4058-9d02-8d0c8f07af88
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - stark
+_core:
+  default_config_hash: '-CUYUbKzZEW6arttyVb3aXg70Fshtc1wLqjZn3xtnQI'
+id: stark_help
+theme: stark
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

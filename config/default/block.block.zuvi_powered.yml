@@ -1,4 +1,4 @@
-uuid: eb6709aa-9500-4ba9-a3d7-d6d08c9f4997
+uuid: e8291c5d-7bd5-40a7-92e1-516c1fa8ef73
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: zuvi_powered
 theme: zuvi
 region: hidden_blocks
-weight: -17
+weight: -8
 provider: null
 plugin: system_powered_by_block
 settings:

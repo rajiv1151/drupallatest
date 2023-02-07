@@ -1,0 +1,27 @@
+uuid: 07e00c36-0961-4dd8-bba5-bf42cbf86dc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - construction
+_core:
+  default_config_hash: dL50xdNZgqojVFfMwa4KgdDvioU-vaBCkknS5sAMVEs
+id: construction_account_menu
+theme: construction
+region: primary_menu
+weight: -10
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

@@ -1,4 +1,4 @@
-uuid: 2d85ae28-faaf-44b2-986f-62e2d15c0d5c
+uuid: 26176198-cc5f-4446-8353-f378560f3742
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ dependencies:
     - zuvi
 id: contactdetails
 theme: zuvi
-region: footer_fourth
-weight: 0
+region: hidden_blocks
+weight: -6
 provider: null
 plugin: 'block_content:78887b5f-0d67-4d80-995c-ac792caea2ee'
 settings:

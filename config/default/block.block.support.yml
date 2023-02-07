@@ -1,4 +1,4 @@
-uuid: df849ff1-9617-4190-a30a-072b5ae1a401
+uuid: 24400bcc-5201-4546-92f3-fcd6ed2411ea
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
 id: support
 theme: zuvi
 region: footer_third
-weight: 0
+weight: -9
 provider: null
 plugin: 'block_content:c6ba6243-e976-4a0c-b32a-9ed57c3ac993'
 settings:

@@ -1,0 +1,22 @@
+uuid: b52d388f-79fd-4e3e-85e2-257c67a271ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - construction
+_core:
+  default_config_hash: XdD9sepXYD_vDiC5cxDAgLJl-GrWyymzBbFuvqeymm0
+id: construction_messages
+theme: construction
+region: highlighted
+weight: -10
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 1ca85108-46ed-4a6d-8b39-8c37d9cde119
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:c6ba6243-e976-4a0c-b32a-9ed57c3ac993'
+  module:
+    - block_content
+  theme:
+    - construction
+id: construction_support
+theme: construction
+region: hidden_content
+weight: -10
+provider: null
+plugin: 'block_content:c6ba6243-e976-4a0c-b32a-9ed57c3ac993'
+settings:
+  id: 'block_content:c6ba6243-e976-4a0c-b32a-9ed57c3ac993'
+  label: Support
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 52b0a675-55a4-4518-8cd6-a7d0cb5b37b1
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - construction
+_core:
+  default_config_hash: NO4k1ZYfGd6QvBm-YfEZjpjO-FlqCfA46FmgNW--rPQ
+id: construction_powered
+theme: construction
+region: hidden_content
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

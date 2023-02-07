@@ -1,0 +1,25 @@
+uuid: 626ef813-fd4f-464f-9b2e-ac6e8cbb85d2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9a4415c9-f103-4b24-951c-87190c770725'
+  module:
+    - block_content
+  theme:
+    - zuvi
+id: whychooseus
+theme: zuvi
+region: content_home
+weight: 0
+provider: null
+plugin: 'block_content:9a4415c9-f103-4b24-951c-87190c770725'
+settings:
+  id: 'block_content:9a4415c9-f103-4b24-951c-87190c770725'
+  label: 'Why Choose Us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

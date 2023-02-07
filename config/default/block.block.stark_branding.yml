@@ -1,0 +1,25 @@
+uuid: 03767a38-64b6-4d6c-bbe6-c3fb27409e2b
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: 9kvJX0G5hL0Bs5UcV3D-6hXTd66lP7mu10wAIqlgmVM
+id: stark_branding
+theme: stark
+region: sidebar_first
+weight: -9
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 9e662645-d558-41e6-849c-3eb9d443fe2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - construction
+_core:
+  default_config_hash: 0baA5-sSRL-BlPzVSPsuKgmJxTOQNeuK-7W2EzJNbeQ
+id: construction_page_title
+theme: construction
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

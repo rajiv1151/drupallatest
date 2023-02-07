@@ -1,0 +1,25 @@
+uuid: 704dd1e0-2dcb-4e0c-80b0-5dd88df1dc65
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:78887b5f-0d67-4d80-995c-ac792caea2ee'
+  module:
+    - block_content
+  theme:
+    - stark
+id: stark_contactdetails
+theme: stark
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:78887b5f-0d67-4d80-995c-ac792caea2ee'
+settings:
+  id: 'block_content:78887b5f-0d67-4d80-995c-ac792caea2ee'
+  label: 'Contact Details'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

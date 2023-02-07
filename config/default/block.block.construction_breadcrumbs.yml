@@ -1,0 +1,22 @@
+uuid: 1502183d-8783-4fc6-91fc-5452f5cd333d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - construction
+_core:
+  default_config_hash: Ql-5SP0-nMyJ5UbCGDxKZNHLjEB2yXBCw7it8LnXP_c
+id: construction_breadcrumbs
+theme: construction
+region: highlighted
+weight: -9
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

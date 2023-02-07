@@ -1,0 +1,25 @@
+uuid: 9ae637ba-3d8f-4d29-86df-f2862dcb8504
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:78887b5f-0d67-4d80-995c-ac792caea2ee'
+  module:
+    - block_content
+  theme:
+    - construction
+id: construction_contactdetails
+theme: construction
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:78887b5f-0d67-4d80-995c-ac792caea2ee'
+settings:
+  id: 'block_content:78887b5f-0d67-4d80-995c-ac792caea2ee'
+  label: 'Contact Details'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

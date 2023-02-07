@@ -1,0 +1,22 @@
+uuid: d9389574-d641-4e35-a483-31ffa4483909
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - construction
+_core:
+  default_config_hash: X35hAr_xkErqMKhSngilKyARyZtPVqAeGadR7WuZEwg
+id: construction_content
+theme: construction
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

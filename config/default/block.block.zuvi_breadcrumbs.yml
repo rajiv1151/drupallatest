@@ -1,4 +1,4 @@
-uuid: 73d3195b-acb7-4daf-b2ce-eb24600029df
+uuid: 4abeb0ba-7e39-491b-af0c-1ca7f8bb7d18
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: zuvi_breadcrumbs
 theme: zuvi
 region: page_header
-weight: -17
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:

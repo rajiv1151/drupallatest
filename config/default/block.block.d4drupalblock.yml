@@ -1,4 +1,4 @@
-uuid: d2ee2843-dc05-4635-a8ab-8651f36e3bb5
+uuid: 17f842f6-cff4-4234-941e-afc924201690
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - zuvi
 id: d4drupalblock
 theme: zuvi
-region: content_top
+region: content_home
 weight: 0
 provider: null
 plugin: d4drupal_block

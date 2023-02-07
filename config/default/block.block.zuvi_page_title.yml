@@ -1,4 +1,4 @@
-uuid: 7826511d-2f12-4066-bbf5-5bb3c7ff87f8
+uuid: 5494ead5-0187-46b3-8db8-a45c688d4329
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ _core:
   default_config_hash: 0baA5-sSRL-BlPzVSPsuKgmJxTOQNeuK-7W2EzJNbeQ
 id: zuvi_page_title
 theme: zuvi
-region: content
-weight: -13
+region: page_header
+weight: -7
 provider: null
 plugin: page_title_block
 settings:

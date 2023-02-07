@@ -1,0 +1,22 @@
+uuid: 4dfcffce-6dee-4296-af91-6038ec3f138b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - construction
+_core:
+  default_config_hash: eskTaHlvVHNwhj2DIR2rhnHJjmrDSffwJJ0dzsQd8Vg
+id: construction_local_tasks
+theme: construction
+region: content
+weight: -10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 56b25ecd-1c3c-4eb1-9c82-1f2ab3d71551
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.articles
+  module:
+    - views
+  theme:
+    - stark
+id: stark_views_block__articles_block_1
+theme: stark
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:articles-block_1'
+settings:
+  id: 'views_block:articles-block_1'
+  label: 'Latest News'
+  label_display: visible
+  provider: views
+  views_label: 'Latest News'
+  items_per_page: none
+visibility: {  }

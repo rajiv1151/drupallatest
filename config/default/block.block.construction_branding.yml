@@ -1,0 +1,25 @@
+uuid: 807fda07-8620-4408-88d8-fc2074980b6c
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - construction
+_core:
+  default_config_hash: 9kvJX0G5hL0Bs5UcV3D-6hXTd66lP7mu10wAIqlgmVM
+id: construction_branding
+theme: construction
+region: hidden_content
+weight: -9
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

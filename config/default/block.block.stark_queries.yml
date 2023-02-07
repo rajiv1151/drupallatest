@@ -1,0 +1,25 @@
+uuid: 5a463592-c0da-4ddc-bf63-6ed85ab76472
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:4dd27e33-2299-442f-9772-ed5b167b1b87'
+  module:
+    - block_content
+  theme:
+    - stark
+id: stark_queries
+theme: stark
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'block_content:4dd27e33-2299-442f-9772-ed5b167b1b87'
+settings:
+  id: 'block_content:4dd27e33-2299-442f-9772-ed5b167b1b87'
+  label: Queries
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

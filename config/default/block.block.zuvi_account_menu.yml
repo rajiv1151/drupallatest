@@ -1,4 +1,4 @@
-uuid: 092a4ce2-c2a4-4552-a1b0-53c6da87ff66
+uuid: a4682796-0e61-4846-ae87-37cdd8935c9c
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: zuvi_account_menu
 theme: zuvi
 region: hidden_blocks
-weight: -10
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:

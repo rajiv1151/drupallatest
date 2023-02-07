@@ -1,0 +1,27 @@
+uuid: 6683a334-7654-4cbe-b867-1b79b9001b9c
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - construction
+_core:
+  default_config_hash: mwNCCS5Q_Dl_A7WwWlIDx0or4oRZt2wBVFHSY2oZkoc
+id: construction_main_menu
+theme: construction
+region: site_branding
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 5
+  expand_all_items: false
+visibility: {  }

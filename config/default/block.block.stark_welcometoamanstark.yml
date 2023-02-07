@@ -1,0 +1,30 @@
+uuid: 396d2d72-a7cb-489f-a52e-35ced7fb26f5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6947d4d3-a2cf-4e54-b31b-bab193ae6306'
+  module:
+    - block_content
+    - system
+  theme:
+    - stark
+id: stark_welcometoamanstark
+theme: stark
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'block_content:6947d4d3-a2cf-4e54-b31b-bab193ae6306'
+settings:
+  id: 'block_content:6947d4d3-a2cf-4e54-b31b-bab193ae6306'
+  label: 'Welcome to Aman-Construction'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /homepage

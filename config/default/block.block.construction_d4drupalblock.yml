@@ -1,0 +1,20 @@
+uuid: 09969053-95b1-446d-92b0-5cf9c7e68e77
+langcode: en
+status: true
+dependencies:
+  module:
+    - d4drupal_block
+  theme:
+    - construction
+id: construction_d4drupalblock
+theme: construction
+region: content
+weight: -3
+provider: null
+plugin: d4drupal_block
+settings:
+  id: d4drupal_block
+  label: 'D4drupal block'
+  label_display: visible
+  provider: d4drupal_block
+visibility: {  }

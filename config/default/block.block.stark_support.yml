@@ -1,0 +1,25 @@
+uuid: 2f4fa40c-eaaa-4a68-a013-5f075ea4bab3
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:c6ba6243-e976-4a0c-b32a-9ed57c3ac993'
+  module:
+    - block_content
+  theme:
+    - stark
+id: stark_support
+theme: stark
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'block_content:c6ba6243-e976-4a0c-b32a-9ed57c3ac993'
+settings:
+  id: 'block_content:c6ba6243-e976-4a0c-b32a-9ed57c3ac993'
+  label: Support
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

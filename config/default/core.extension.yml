@@ -83,5 +83,8 @@ theme:
   olivero: 0
   claro: 0
   stable: 0
+  bootstrap: 0
+  construction: 0
   zuvi: 0
+  stark: 0
 profile: standard

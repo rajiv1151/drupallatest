@@ -1,0 +1,30 @@
+uuid: 8bea2dfd-ccec-4a5b-b179-5352fccddbdc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:38638deb-c57f-445b-8f27-90b3f98e3a86'
+  module:
+    - block_content
+    - system
+  theme:
+    - stark
+id: stark_ourservices
+theme: stark
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:38638deb-c57f-445b-8f27-90b3f98e3a86'
+settings:
+  id: 'block_content:38638deb-c57f-445b-8f27-90b3f98e3a86'
+  label: 'Our Services'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /homepage

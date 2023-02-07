@@ -1,4 +1,4 @@
-uuid: db0a920c-246f-4664-a537-94dc34ade8f3
+uuid: ad44febf-0a63-45da-836b-2fd75b1a411d
 langcode: en
 status: true
 dependencies:
@@ -16,9 +16,9 @@ provider: null
 plugin: 'views_block:articles-block_1'
 settings:
   id: 'views_block:articles-block_1'
-  label: 'Latest News'
+  label: 'Latest Articles/Offers'
   label_display: visible
   provider: views
-  views_label: 'Latest News'
-  items_per_page: none
+  views_label: 'Latest Articles/Offers'
+  items_per_page: '3'
 visibility: {  }

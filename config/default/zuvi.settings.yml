@@ -2,7 +2,8 @@ _core:
   default_config_hash: _0b2Dyb993JzkbRlFnYz7hMynhBxgPtAERPG2BDTudI
 favicon:
   mimetype: image/png
-  path: 'public://home.png'
+  path: 'public://home_0.png'
+  url: /drupallatest/web/sites/default/files/home_0.png
   use_default: false
 features:
   comment_user_picture: true
@@ -10,7 +11,8 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: 'public://construction.png'
+  path: 'public://construction_0.png'
+  url: ''
   use_default: false
 all_icons_show: 1
 facebook_url: 'https://www.facebook.com/idewdot'
@@ -25,9 +27,9 @@ github_url: 'https://github.com/'
 vk_url: ''
 circle_type: circle_border
 slider_show: 1
-slider_code: "<li>\r\n  <h1>Aman Construction is <em>Multipurpose</em> Point</h1>\r\n  <p>Welcome to Aman Construction !!!</p>\r\n  <a class=\"button-link\" href=\"#\">Let Us Know</a>\r\n</li>\r\n<li>\r\n  <h1>Welcome To <em>Aman Construction</em> Design Studio</h1>\r\n  <p>We present you material design. We keep all materials into making our lovely home.</p>\r\n  <a class=\"button-link\" href=\"#\">Lovely Home</a>\r\n</li>\r\n<li>\r\n  <h1>We Provide <em>Awesome</em> Home designs, Suggestions, Material.</h1>\r\n  <p>We Provide of high quality, flexible and beautifully crafted that stand out of crowd.</p>\r\n  <a class=\"button-link\" href=\"#\">Let us know your Requirement</a>\r\n</li>"
+slider_code: "<li>\r\n  <h1>Aman Construction is <em>Multipurpose</em> Point</h1>\r\n  <p>We provide you awesome materials for successful construction our dream home</p>\r\n  <a class=\"button-link\" href=\"#\">Get Started</a>\r\n</li>\r\n<li>\r\n  <h1>Welcome To <em>Aman Construction</em> Design Studio</h1>\r\n  <p>We present you material design. We put our hearts and soul into making every project.</p>\r\n  <a class=\"button-link\" href=\"#\">Get Started</a>\r\n</li>\r\n<li>\r\n  <h1>We Suggest <em>Awesome</em> material/Point</h1>\r\n  <p>Our materials are of high quality, flexible and beautifully crafted that stand out of crowd.</p>\r\n  <a class=\"button-link\" href=\"#\">Get Started</a>\r\n</li>"
 slider_image:
-  - '3'
+  - '9'
 slider_image_path: ''
 front_sidebar: 0
 comment_user_pic: 1
@@ -39,4 +41,55 @@ copyright_text: 1
 scrolltotop_on: 1
 styling: 0
 styling_code: ''
+schemas:
+  bootstrap: 8000
+  zuvi: 8000
+button_colorize: null
+button_iconize: null
+button_size: null
+fluid_container: null
+forms_has_error_value_toggle: null
+forms_required_has_error: null
+forms_smart_descriptions: null
+forms_smart_descriptions_allowed_tags: null
+forms_smart_descriptions_limit: null
+image_responsive: null
+image_shape: null
+table_bordered: null
+table_condensed: null
+table_hover: null
+table_striped: null
+table_responsive: null
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer: ''
+  site_branding: ''
+  primary_menu: ''
+  search_box: ''
+  page_header: ''
+  content_top: ''
+  content_bottom: ''
+  content_home: ''
+  footer_top: ''
+  footer_first: ''
+  footer_second: ''
+  footer_third: ''
+  footer_fourth: ''
+  footer_bottom: ''
+  hidden_blocks: ''
+cdn_theme: bootstrap
+cdn_cache_ttl_versions: '604800'
+cdn_cache_ttl_themes: '604800'
+cdn_cache_ttl_assets: '0'
+cdn_cache_ttl_library: '0'
+apply: Apply
+reset_http_request_cache: ''
+table: ''
 font_icon_fontawesome5: 0
