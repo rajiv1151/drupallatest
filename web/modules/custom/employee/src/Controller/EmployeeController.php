@@ -45,11 +45,11 @@ class EmployeeController extends ControllerBase {
 	  ];
 	//if (in_array('administrator', $current_user_roles)) {
     return [
-      '#title' => 'Employee Information Page',
-	  '#theme' => 'employee_page',//this is from template folder twig name but with underscore_ not hypen-
+      '#title' => 'Employee Information Page via controller from custom twig',
+	    '#theme' => 'employee_page',//this is from template folder twig name but with underscore_ not hypen-
       '#data' => $data,
-	  '#emp_datas' => $emp_datas,
-	  '#user_role' => $current_user_roles,
+	    '#emp_datas' => $emp_datas,
+	    '#user_role' => $current_user_roles,
 	  
     ];
 	/*}else{

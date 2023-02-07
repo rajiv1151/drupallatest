@@ -10,7 +10,12 @@
 #}
 {#{{ drupal_block('d4drupal_block') }} 
 {{ drupal_view('articles') }}
-{{ drupal_form('employee_ajax') }} #}
+{{ drupal_form('employee_ajax') }} 
+#}
+
+{# header.html.twig will have access to the variables from the current context and the additional ones provided #}
+{# {% extends directory ~ 'header.twig' %} #}
+
 {% apply spaceless %}
     <div class ="simplelogin">
       Name: {{ data.name }} </br>
@@ -41,3 +46,7 @@
  {% endif %}
 
 {% endapply %}
+
+{#Like PHP, Twig does not support multiple inheritance. So you can only have one 
+  extends tag called per rendering. However, Twig supports horizontal reuse.#}
+{# {% extends 'footer.html.twig' %} #}

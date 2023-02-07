@@ -1,0 +1,25 @@
+name: Construction
+type: theme
+base theme: bootstrap
+description: 'My Aman construction custom theme.'
+core_version_requirement: ^9 || ^10
+libraries:
+  - construction/global-styling
+  - construction/global-scripts
+
+libraries-extend:
+libraries-override:
+   system/base:
+    css:
+      component:
+        css/components/ajax-progress.module.css: css/components/ajax-progress.css
+        css/components/align.module.css: false
+
+regions:
+  site_branding: 'Site Branding'
+  primary_menu: 'Primary menu'
+  page_header: 'Page Header'
+  highlighted: 'Highlighted'
+  content: 'Content'
+  footer: 'Footer'
+  hidden_content: 'hidden_content'

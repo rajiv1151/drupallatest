@@ -14,7 +14,6 @@ libraries-override: #used in subtheme that you dont want to inherit from base_th
       theme:
         /core/themes/stable/css/contextual/contextual.theme.css: false
         /core/themes/stable/css/contextual/contextual.icons.theme.css: false
-        
 libraries:
   - gateway_theme/global-styling
   - gateway_theme/global-scripts
