@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'b18a1de121faa255dbf71eca2bbc072b61f9bbc2',
+        'reference' => '486928c18fd33d5776f040f78b5cc35dc4afe99f',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -517,6 +517,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/examples' => array(
+            'pretty_version' => '3.0.3',
+            'version' => '3.0.3.0',
+            'reference' => '3.0.3',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/examples',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/openid_connect' => array(
             'pretty_version' => '1.2.0',
             'version' => '1.2.0.0',
@@ -538,7 +547,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'b18a1de121faa255dbf71eca2bbc072b61f9bbc2',
+            'reference' => '486928c18fd33d5776f040f78b5cc35dc4afe99f',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

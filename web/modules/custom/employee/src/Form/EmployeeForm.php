@@ -117,7 +117,7 @@ class EmployeeForm extends FormBase {
     $formData['emp_lastname'] = $formField['emp_lastname'];
     $formData['emp_email'] = $formField['emp_email'];
     $formData['emp_zipcode'] = $formField['emp_zipcode'];
-	$formData['accept'] = $formField['accept'];
+	  $formData['accept'] = $formField['accept'];
 
     $conn->insert('employee')
       ->fields($formData)->execute();

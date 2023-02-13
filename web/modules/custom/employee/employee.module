@@ -37,16 +37,23 @@ function employee_views_pre_render(ViewExecutable $view){
  * Implements hook_theme()
  */
 function employee_theme($existing, $type, $theme, $path) {
-  $return = [];  
-  $return['employee_page'] = [//from controller
-    'template' => 'employee-page',//optional
-    'variables'=>[
-	    'data'=>[],//variable name from controller
-		'title'=>'',
-		'emp_datas'=>[],//variable name from controller
-		'user_role'=>[]
-	]
+  return [
+    'employee_page' => [
+      'template' => 'employee-page',
+      'variables'=>[
+        'data'=>[],//variable name from controller
+        'title'=>'',
+        'emp_datas'=>[],//variable name from controller
+        'user_role'=>[]
+      ],
+    ],
+    'user_service_details' => [
+      'variables'=>[
+        'content'=>'',
+        'total'=>'',
+      ],
+      'render element'=>'children',
+    ],
   ];
-     
-return $return;	
+
 }

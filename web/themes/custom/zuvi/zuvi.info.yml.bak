@@ -1,6 +1,6 @@
 name: Zuvi
 type: theme
-base theme: Bootstrap
+base theme: bootstrap
 description: 'A light weight, flexible, fully responsive and multi-purpose Drupal 8, 9 theme by <a href="https://www.drupar.com" target="_blank">Drupar.com</a><br /><a href="https://www.drupar.com/theme/zuvi" target="_blank">Theme Page</a> | <a href="https://www.drupar.com/zuvi-documentation" target="_blank">Theme Documentation</a> | <a href="https://www.drupar.com/theme/zuvipro" target="_blank">Zuvi Pro</a>'
 package: Drupar
 # Define Drupal core requirement
@@ -27,13 +27,9 @@ regions:
   highlighted: Highlighted
   content: Content
   content_home: 'Homepage Content'
-  sidebar_first: 'Sidebar Left'
-  sidebar_second: 'Sidebar Right'
-  footer_top: 'Footer Top'
   footer_first: 'Footer first'
   footer_second: 'Footer second'
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
-  footer_bottom: 'Footer Bottom'
   hidden_blocks: 'Hidden Blocks'
 

@@ -1,0 +1,4 @@
+services:
+  plugin.manager.sandwitch:
+    class: Drupal\plugin_type_example\SandwitchPluginManager
+    parent: default_plugin_manager

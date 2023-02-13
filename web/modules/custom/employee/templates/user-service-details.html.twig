@@ -1,0 +1,37 @@
+{#
+/** 
+*@file
+* default theme implementation to dispaly a block
+* @see employee_theme()
+* Available variables:
+*
+*  -content,-total: The content to be rendered.
+*/
+#}
+{% set classes = ['clear-both',] %}
+<div{{attributes.addClass(classes)}}>
+
+{% apply spaceless %}
+  <table id = 'services'>
+      <tr>
+         <th>Service Name</th>
+         <th>Service Cost</th>
+      </tr>  
+    {% for value in content %}
+      <tr>
+         <td>{{ value['title'] }}</td>
+         <td>{{ value['cost'] }}</td>
+      </tr>
+    {% endfor %} 
+    <tr>
+         <td><b>{{ 'Total' }}</b></td>
+         <td><b>{{ total }}</b></td>
+      </tr> 
+  </table>
+ </div>
+
+{% endapply %}
+
+{#Like PHP, Twig does not support multiple inheritance. So you can only have one 
+  extends tag called per rendering. However, Twig supports horizontal reuse.#}
+{# {% extends 'footer.html.twig' %} #}

@@ -13,6 +13,15 @@ libraries:
   - zuvi/global-scripts # Library for all global js. These js will be loaded on every pages.
   
 libraries-extend:
+  core/drupal.ajax:
+    - bootstrap/drupal.ajax
+  core/drupal.autocomplete:
+    - bootstrap/drupal.autocomplete
+  core/drupal.dialog.ajax:
+    - bootstrap/drupal.dialog.ajax
+  views/views.ajax:
+    - bootstrap/views.ajax
+    
 libraries-override:
    system/base:
     css:
@@ -27,13 +36,9 @@ regions:
   highlighted: Highlighted
   content: Content
   content_home: 'Homepage Content'
-  sidebar_first: 'Sidebar Left'
-  sidebar_second: 'Sidebar Right'
-  footer_top: 'Footer Top'
   footer_first: 'Footer first'
   footer_second: 'Footer second'
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
-  footer_bottom: 'Footer Bottom'
   hidden_blocks: 'Hidden Blocks'
 

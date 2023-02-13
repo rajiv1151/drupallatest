@@ -1,15 +1,22 @@
 employee.employee:
-  path: '/employee-data'
+  path: '/employee-form'
   defaults:
-    _title: 'Employee Details'
+    _title: 'Employee Form'
     _form: 'Drupal\employee\Form\EmployeeForm'
   requirements:
     _permission: 'access content'
 employee.ajax:    
-  path: '/employee-ajax-data'
+  path: '/employee-ajax-form'
   defaults:
-    _title: 'Employee Ajax Details'
+    _title: 'Employee AJAX Form'
     _form: 'Drupal\employee\Form\EmployeeAjaxForm'
+  requirements:
+    _permission: 'access content'
+employee.di:    
+  path: '/employee-di-form'
+  defaults:
+    _title: 'Employee DI Form'
+    _form: 'Drupal\employee\Form\EmployeeDiForm'
   requirements:
     _permission: 'access content'
 employee.information:    

@@ -1,0 +1,4 @@
+services:
+  cost.user.services:
+    class: Drupal\employee\CostService
+    argument: ["@current_user", "@entity_type.manager"]
