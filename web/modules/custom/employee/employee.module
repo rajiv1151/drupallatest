@@ -1,4 +1,5 @@
 <?php
+use Drupal\user\Entity\User;
 use \Drupal\views\ViewExecutable;//used for hook_view
 /**
  * @param $variables
@@ -8,7 +9,7 @@ use \Drupal\views\ViewExecutable;//used for hook_view
  */
 function employee_preprocess_page(&$variables){
 	$variables['#attached']['library'][] = 'employee/employee-library';
-    $account = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    $account = User::load(\Drupal::currentUser()->id());
     $user = $account->get('name')->value;
     //echo "$user";
     $variables['#attached']['drupalSettings']['employee']['current_user'] = $user;

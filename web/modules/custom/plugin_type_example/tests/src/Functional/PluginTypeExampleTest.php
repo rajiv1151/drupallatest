@@ -25,7 +25,7 @@ class PluginTypeExampleTest extends ExamplesBrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['plugin_type_example'];
+  protected static $modules = ['plugin_type_example'];
 
   /**
    * The installation profile to use with this test.
@@ -65,7 +65,7 @@ class PluginTypeExampleTest extends ExamplesBrowserTestBase {
     $ref_day->setAccessible(TRUE);
     $ref_day->setValue($meatball, 'Sun');
     // Check the special description on Sunday.
-    $this->assertEqual($meatball->description(), 'Italian style meatballs drenched in irresistible marinara sauce, served on day old bread.');
+    $this->assertEquals($meatball->description(), 'Italian style meatballs drenched in irresistible marinara sauce, served on day old bread.');
   }
 
   /**

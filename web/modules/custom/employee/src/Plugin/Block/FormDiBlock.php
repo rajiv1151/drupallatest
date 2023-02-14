@@ -19,7 +19,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class FormDiBlock extends BlockBase implements ContainerFactoryPluginInterface{
 
   protected $formBuilder;//creating object with variable
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, FormBuilderInterface $formBuilder) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, FormBuilderInterface $formBuilder) {//used to initialize the object $formBuilder
   $this->formBuilder = $formBuilder;//initialize the $formBuilder object
   }
 

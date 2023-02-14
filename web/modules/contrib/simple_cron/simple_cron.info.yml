@@ -2,7 +2,7 @@ name: Simple Cron
 type: module
 description: 'Provide plugins for cron implementation'
 package: Simple cron
-core_version_requirement: ^8.9 || ^9
+core_version_requirement: ^9 || ^10
 php: 7.2
 configure: simple_cron.settings
 

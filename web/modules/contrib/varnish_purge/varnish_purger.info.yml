@@ -2,7 +2,7 @@ name: Varnish Purger
 type: module
 description: 'Purger for varnish. Purges page caches from varnish. Works together with the purge module.'
 package: "Purge - reverse proxies & CDNs"
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 dependencies:
   - purge:purge
   - purge:purge_tokens
